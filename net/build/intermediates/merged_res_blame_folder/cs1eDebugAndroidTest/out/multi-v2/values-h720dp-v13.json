@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.zeekrlife.net.test.net-mergeCs1eDebugAndroidTestResources-34:/values-h720dp-v13/values-h720dp-v13.xml",
+            "map": [
+                {
+                    "source": "/Users/mac/.gradle/caches/transforms-3/a76005f132c42de2f6480841664fc3d5/transformed/appcompat-1.5.0/res/values-h720dp-v13/values-h720dp-v13.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "66",
+                        "endOffsets": "117"
+                    }
+                }
+            ]
+        }
+    ]
+}

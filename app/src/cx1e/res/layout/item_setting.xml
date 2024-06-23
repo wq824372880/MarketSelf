@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hjq.shape.layout.ShapeConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/setting_item"
+    android:layout_width="@dimen/dp.1000"
+    android:layout_height="@dimen/setting_item_height"
+    android:layout_gravity="center"
+    app:shape_radius="@dimen/dp.8"
+    app:shape_strokeColor="@color/setting_item_bg_color"
+    app:shape_solidColor="@color/setting_item_bg_color"
+    android:clipChildren="false"
+    android:clipToPadding="false">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/item_switch_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="@dimen/dp_40"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shape_radius="@dimen/dp.16">
+
+        <com.zeekr.component.selection.ZeekrSwitch
+            android:id="@+id/item_switch"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/theme_main_text_color"
+            app:hasInfoIcon="false"
+            android:gravity="center_vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:switchEnabled="true"
+            app:zeekrChecked="false"
+            app:zeekrSwitchText="@string/setting_auto_update" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_40"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_item_title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp.48"
+            android:gravity="center_vertical"
+            android:textAppearance="?attr/textAppearanceLabelMedium"
+            android:textColor="@color/theme_main_text_color"
+            />
+
+        <View
+            android:id="@+id/tv_item_title_right_icon"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_marginStart="@dimen/dp_14"
+            android:visibility="gone" />
+    </LinearLayout>
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_setting_arrow"
+        android:layout_width="@dimen/dp.32"
+        android:layout_height="@dimen/dp.32"
+        android:layout_marginEnd="@dimen/dp.44"
+        android:src="@drawable/selector_arrow_select"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_item_subtitle_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/dp.36"
+        android:alpha=".8"
+        android:textAppearance="?attr/textAppearanceLabelMedium"
+        android:textColor="@color/theme_main_text_color"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</com.hjq.shape.layout.ShapeConstraintLayout>

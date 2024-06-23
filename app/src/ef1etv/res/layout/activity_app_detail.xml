@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="@dimen/tv_73"
+    android:background="@color/theme_main_background_color">
+
+    <com.zeekrlife.market.widget.TVToolBar
+        android:id="@+id/tool_bar_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/tv_24"
+        android:layout_marginTop="@dimen/tv_64"
+        android:background="@drawable/selector_focus_border_view"
+        android:defaultFocusHighlightEnabled="false"
+        android:descendantFocusability="blocksDescendants"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/theme_main_background_color"
+        android:fadingEdge="none"
+        android:fadingEdgeLength="@dimen/tv_64"
+        android:overScrollMode="never"
+        android:requiresFadingEdge="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tool_bar_tv">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusable="false"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/layout_app_detail_info"
+                layout="@layout/view_app_detail_info"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/tv_80"
+                android:layout_marginTop="@dimen/tv_38" />
+
+            <include
+                android:id="@+id/layout_app_detail_images"
+                layout="@layout/view_app_detail_recycler_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/tv_260" />
+
+        </FrameLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <include
+        android:id="@+id/detail_loading"
+        layout="@layout/layout_loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+

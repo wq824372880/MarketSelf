@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.zeekrlife.net.test.net-mergeCs1eDebugAndroidTestResources-34:/values-port/values-port.xml",
+            "map": [
+                {
+                    "source": "/Users/mac/.gradle/caches/transforms-3/a76005f132c42de2f6480841664fc3d5/transformed/appcompat-1.5.0/res/values-port/values-port.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "55",
+                        "endOffsets": "106"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,4 @@
+-keep class com.zeekrlife.market.task.IArrangeCallback** { *; }
+-keep class com.zeekrlife.market.task.ITaskCallback** { *; }
+-keep class com.zeekrlife.market.task.ITaskInfo** { *; }
+-keep class com.zeekrlife.market.task.ITaskService** { *; }

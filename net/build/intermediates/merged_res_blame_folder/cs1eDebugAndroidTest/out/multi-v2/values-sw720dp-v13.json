@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.zeekrlife.net.test.net-mergeCs1eDebugAndroidTestResources-34:/values-sw720dp-v13/values-sw720dp-v13.xml",
+            "map": [
+                {
+                    "source": "/Users/mac/.gradle/caches/transforms-3/19355e4ac74f41fd232a42af3f6e50c5/transformed/jetified-multidisplay-1.0.6.1-SNAPSHOT/res/values-sw720dp-v13/values-sw720dp-v13.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "55,101,150,198,254,310,363",
+                        "endColumns": "45,48,47,55,55,52,45",
+                        "endOffsets": "96,145,193,249,305,358,404"
+                    }
+                }
+            ]
+        }
+    ]
+}

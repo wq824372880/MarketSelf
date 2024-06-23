@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.zeekrlife.market">
+
+    <application>
+
+        <activity
+            android:name=".ui.activity.HomeCXActivity"
+            android:launchMode="singleTop"
+            android:exported="true"
+            android:screenOrientation="landscape" >
+            <intent-filter>
+<!--                <action android:name="android.intent.action.MAIN" />-->
+<!--                <category android:name="android.intent.category.LAUNCHER"/>-->
+                <action android:name="com.zeekr.multidisplay.activity" />
+            </intent-filter>
+            <meta-data
+                android:name="zeekr_app_display_config"
+                android:resource="@xml/app_display_config2" />
+        </activity>
+
+        <activity
+            android:name=".ui.activity.LauncherCXActivity"
+            android:exported="true"
+            android:screenOrientation="landscape" />
+
+        <activity
+            android:name=".ui.activity.SearchCXActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="landscape"
+            android:windowSoftInputMode="stateUnspecified|adjustResize|stateHidden|adjustPan" />
+
+        <activity
+            android:name="com.zeekrlife.market.ui.activity.WebCXActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="landscape" />
+
+        <activity
+            android:name="com.zeekrlife.market.ui.activity.AppDetailCXActivity"
+            android:theme="@style/FullScreenTheme"
+            android:launchMode="singleTop"
+            android:screenOrientation="landscape" />
+
+        <activity
+            android:name="com.zeekrlife.market.ui.activity.AppDetailImgPreviewCXActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="landscape" />
+
+    </application>
+
+</manifest>

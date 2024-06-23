@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.zeekrlife.ampe.core">
+
+    <queries>
+        <package android:name="com.alipay.arome.app" />
+        <provider android:authorities="com.alipay.mobile.arome.provider" />
+        <package android:name="com.alipay.arome.ext"/>
+    </queries>
+    <permission
+        android:name="zeekrlife.permission.AMPE_APPLET"
+        android:protectionLevel="signature|system" />
+
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+<!--    <uses-permission android:name="android.permission.READ_PHONE_STATE" />-->
+<!--    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />-->
+    <uses-permission
+        android:name="android.permission.READ_LOGS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission
+        android:name="android.permission.BROADCAST_PACKAGE_REMOVED"
+        tools:ignore="ProtectedPermissions" />
+
+    <!-- 添加快捷方式 -->
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <!-- 移除快捷方式 -->
+    <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT" />
+    <uses-permission android:name="android.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="android.permission.UNINSTALL_SHORTCUT" />
+    <uses-permission android:name="android.permission.USE_FULL_SCREEN_INTENT" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.START_ACTIVITIES_FROM_BACKGROUND"
+        android:protectionLevel="signature|privileged|vendorPrivileged|oem|verifier" />
+<!--    <uses-permission android:name="android.permission.SYSTEM_OVERLAY_WINDOW" />-->
+
+<!--    <permission android:name="android.permission.START_ACTIVITIES_FROM_BACKGROUND"-->
+<!--        android:protectionLevel="signature|privileged|vendorPrivileged|oem|verifier|role" />-->
+
+
+    <uses-permission
+        android:name="android.permission.CHANGE_OVERLAY_PACKAGES"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.INTERNET" />
+<!--    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />-->
+<!--    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />-->
+    <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES" />
+
+    <application
+        android:allowBackup="false"
+        android:extractNativeLibs="true">
+        <service
+            android:name="com.zeekrlife.ampe.core.AppletService"
+            android:exported="true"
+            android:enabled="true"
+            android:permission="zeekrlife.permission.AMPE_APPLET">
+
+            <intent-filter>
+                <action android:name="zeekrlife.intent.action.AMPE_APPLET_SERVICE_START" />
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </service>
+    </application>
+</manifest>

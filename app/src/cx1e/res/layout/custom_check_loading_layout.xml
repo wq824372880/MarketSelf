@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:paddingTop="@dimen/dp.48"
+    android:paddingBottom="@dimen/dp.48">
+
+    <ProgressBar
+        android:layout_width="@dimen/dp.72"
+        android:layout_height="@dimen/dp.72"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginEnd="@dimen/dp.42"
+        android:indeterminateBehavior="repeat"
+        android:indeterminateDrawable="@drawable/refresh_loading"
+        android:indeterminateDuration="1000" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:alpha="0.6"
+        android:text="正在检查更新"
+        android:textSize="@dimen/app_title_size"
+        android:textAppearance="?attr/textAppearanceLabelMedium"
+        android:textColor="@color/theme_main_text_color" />
+</androidx.appcompat.widget.LinearLayoutCompat>

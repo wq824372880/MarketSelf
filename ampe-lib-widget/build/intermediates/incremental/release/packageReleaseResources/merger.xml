@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="main$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/mac/workspace/备份/ta_app_store_fuben/ampe-lib-widget/src/main/res"/><source path="/Users/mac/workspace/备份/ta_app_store_fuben/ampe-lib-widget/build/generated/res/rs/release"/><source path="/Users/mac/workspace/备份/ta_app_store_fuben/ampe-lib-widget/build/generated/res/resValues/release"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="main" generated-set="main$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/mac/workspace/备份/ta_app_store_fuben/ampe-lib-widget/src/main/res"><file name="fragment_applet_widget" path="/Users/mac/workspace/备份/ta_app_store_fuben/ampe-lib-widget/src/main/res/layout/fragment_applet_widget.xml" qualifiers="" type="layout"/><file path="/Users/mac/workspace/备份/ta_app_store_fuben/ampe-lib-widget/src/main/res/values-night/colors.xml" qualifiers="night-v8"><color name="theme_main_background_color">#1D1F24</color><color name="colorWhite">#ffffff</color><color name="colorDark">#1D1F24</color></file><file path="/Users/mac/workspace/备份/ta_app_store_fuben/ampe-lib-widget/src/main/res/values/colors.xml" qualifiers=""><color name="theme_main_background_color">#FFFFFF</color><color name="colorWhite">#ffffff</color><color name="colorDark">#1D1F24</color></file><file path="/Users/mac/workspace/备份/ta_app_store_fuben/ampe-lib-widget/src/main/res/values/dimens.xml" qualifiers=""><dimen name="apps_card_width">660dp</dimen><dimen name="apps_card_height">340dp</dimen></file><file path="/Users/mac/workspace/备份/ta_app_store_fuben/ampe-lib-widget/src/main/res/values/strings.xml" qualifiers=""/><file path="/Users/mac/workspace/备份/ta_app_store_fuben/ampe-lib-widget/src/main/res/values/attrs.xml" qualifiers=""><declare-styleable name="CircleProgressBar">
+        
+        <attr format="color" name="defaultColor"/>
+        
+        <attr format="color" name="reachedColor"/>
+        
+        <attr format="color" name="stateBlockColor"/>
+        
+        <attr format="dimension" name="defaultHeight"/>
+        
+        <attr format="dimension" name="reachedHeight"/>
+        
+        <attr format="dimension" name="radius"/>
+    </declare-styleable></file><file path="/Users/mac/workspace/备份/ta_app_store_fuben/ampe-lib-widget/src/main/res/values-en/strings.xml" qualifiers="en"/></source><source path="/Users/mac/workspace/备份/ta_app_store_fuben/ampe-lib-widget/build/generated/res/rs/release"/><source path="/Users/mac/workspace/备份/ta_app_store_fuben/ampe-lib-widget/build/generated/res/resValues/release"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="release$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/mac/workspace/备份/ta_app_store_fuben/ampe-lib-widget/src/release/res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="release" generated-set="release$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/mac/workspace/备份/ta_app_store_fuben/ampe-lib-widget/src/release/res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="generated$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"/><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="generated" generated-set="generated$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"/><mergedItems><configuration qualifiers=""><declare-styleable name="CircleProgressBar">
+        
+        <attr format="color" name="defaultColor"/>
+        
+        <attr format="color" name="reachedColor"/>
+        
+        <attr format="color" name="stateBlockColor"/>
+        
+        <attr format="dimension" name="defaultHeight"/>
+        
+        <attr format="dimension" name="reachedHeight"/>
+        
+        <attr format="dimension" name="radius"/>
+    </declare-styleable></configuration></mergedItems></merger>

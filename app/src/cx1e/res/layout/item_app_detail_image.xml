@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.AppCompatImageView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/dp.847"
+    android:layout_height="@dimen/dp.490"
+    android:layout_marginEnd="@dimen/dp.18"
+    android:scaleType="fitCenter"
+    tools:srcCompat="@drawable/img_bg_default_large_app_detail_bg" />

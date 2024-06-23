@@ -1,0 +1,100 @@
+plugins {
+    id 'com.android.library'
+    id 'kotlin-android'
+    id 'kotlin-kapt'
+    id 'kotlin-parcelize'
+}
+
+android {
+    compileSdk 33
+
+    defaultConfig {
+        minSdk 28
+        targetSdk 33
+        versionCode 16
+        flavorDimensions "vehicleModel"
+        // dex突破65535的限制
+        multiDexEnabled true
+    }
+
+    productFlavors {
+        cs1e {
+            buildConfigField "String", "MODEL_TYPE", "\"cs1e\""
+        }
+        ef1etv {
+            buildConfigField "String", "MODEL_TYPE", "\"ef1e-tv\""
+        }
+        cx1e {
+            buildConfigField "String", "MODEL_TYPE", "\"cx1e\""
+        }
+    }
+    sourceSets {
+        cs1e {
+            java {
+                srcDirs 'src/cs1e/java'
+            }
+            res {
+                srcDirs 'src/cs1e/res'
+            }
+        }
+        ef1etv {
+            java {
+                srcDirs 'src/ef1etv/java'
+            }
+            res {
+                srcDirs 'src/ef1etv/res'
+            }
+        }
+        cx1e {
+            java {
+                srcDirs 'src/cx1e/java'
+            }
+            res {
+                srcDirs 'src/cx1e/res'
+            }
+        }
+    }
+    buildTypes {
+        debug {
+            debuggable true
+            minifyEnabled false
+        }
+        uat {
+            debuggable true
+            minifyEnabled false
+            zipAlignEnabled false
+        }
+        release {
+            debuggable false
+            minifyEnabled false
+            zipAlignEnabled false
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
+    }
+
+    kotlinOptions {
+        jvmTarget = JavaVersion.VERSION_11
+    }
+//    repositories {
+//        flatDir {
+//            dirs 'libs'
+//        }
+//    }
+}
+
+dependencies {
+    //    implementation fileTree(dir: 'libs', include: ['*.jar','*.aar'])
+//    api files('libs/aromecli-build-1.0.0.220421185143.aar')
+//    cs1eApi "com.alipay.aromeext:aromeextsdk:3.0.1.1"
+//    ef1etvApi "com.alipay.aromeext:aromeextsdk:3.0.1.1"
+    api project(path: ':local-repo:arome')
+    // api project(path: ':ampe-aidl')
+    api 'com.zeekrlife.ampe.aidl:ampe-aidl:1.0.2'
+    implementation project(path: ':common')
+    //room
+    annotationProcessor "androidx.room:room-compiler:2.5.2"
+    kapt "androidx.room:room-compiler:2.5.2"
+}

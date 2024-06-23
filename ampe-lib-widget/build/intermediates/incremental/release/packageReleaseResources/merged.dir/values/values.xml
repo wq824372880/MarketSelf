@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorDark">#1D1F24</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="theme_main_background_color">#FFFFFF</color>
+    <dimen name="apps_card_height">340dp</dimen>
+    <dimen name="apps_card_width">660dp</dimen>
+    <declare-styleable name="CircleProgressBar">
+        
+        <attr format="color" name="defaultColor"/>
+        
+        <attr format="color" name="reachedColor"/>
+        
+        <attr format="color" name="stateBlockColor"/>
+        
+        <attr format="dimension" name="defaultHeight"/>
+        
+        <attr format="dimension" name="reachedHeight"/>
+        
+        <attr format="dimension" name="radius"/>
+    </declare-styleable>
+</resources>

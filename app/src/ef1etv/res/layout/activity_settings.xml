@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/theme_main_background_color"
+        android:orientation="vertical">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:overScrollMode="never"
+            android:paddingBottom="@dimen/tv_32"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginStart="@dimen/tv_30">
+
+                <include
+                    android:id="@+id/setting_layout_auto_update"
+                    layout="@layout/item_setting"
+                    android:layout_width="@dimen/tv_788"
+                    android:layout_height="@dimen/tv_120"
+                    android:layout_marginStart="@dimen/tv_26"
+                    android:layout_marginTop="@dimen/tv_64"
+                    android:layout_marginEnd="@dimen/tv_48" />
+
+                <include
+                    android:id="@+id/setting_layout_version"
+                    layout="@layout/item_setting"
+                    android:layout_width="@dimen/tv_788"
+                    android:layout_height="@dimen/tv_120"
+                    android:layout_marginStart="@dimen/tv_26"
+                    android:layout_marginTop="@dimen/tv_12"
+                    android:layout_marginEnd="@dimen/tv_48" />
+
+                <include
+                    android:id="@+id/setting_layout_check_update"
+                    layout="@layout/item_setting"
+                    android:layout_width="@dimen/tv_788"
+                    android:layout_height="@dimen/tv_120"
+                    android:layout_marginStart="@dimen/tv_26"
+                    android:layout_marginTop="@dimen/tv_12"
+                    android:layout_marginEnd="@dimen/tv_48" />
+
+                <include
+                    android:id="@+id/setting_layout_user_agreement"
+                    layout="@layout/item_setting"
+                    android:layout_width="@dimen/tv_788"
+                    android:layout_height="@dimen/tv_120"
+                    android:layout_marginStart="@dimen/tv_26"
+                    android:layout_marginTop="@dimen/tv_12"
+                    android:layout_marginEnd="@dimen/tv_48" />
+
+                <include
+                    android:id="@+id/setting_layout_privacy_agreement"
+                    layout="@layout/item_setting"
+                    android:layout_width="@dimen/tv_788"
+                    android:layout_height="@dimen/tv_120"
+                    android:layout_marginStart="@dimen/tv_26"
+                    android:layout_marginTop="@dimen/tv_12"
+                    android:layout_marginEnd="@dimen/tv_48"
+                    android:layout_marginBottom="@dimen/tv_64" />
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:layout_width="@dimen/tv_539"
+        android:layout_height="@dimen/tv_849"
+        android:layout_marginEnd="0dp"
+        android:alpha="0.2"
+        android:src="@drawable/setting_right_bg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

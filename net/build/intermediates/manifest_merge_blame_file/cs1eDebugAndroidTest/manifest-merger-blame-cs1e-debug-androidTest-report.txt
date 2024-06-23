@@ -1,0 +1,115 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.zeekrlife.net.test" >
+4
+5    <uses-sdk
+5-->/Users/mac/workspace/备份/ta_app_store_fuben/net/build/intermediates/tmp/manifest/androidTest/cs1e/debug/tempFile1ProcessTestManifest3429376528735958718.xml:5:5-74
+6        android:minSdkVersion="28"
+6-->/Users/mac/workspace/备份/ta_app_store_fuben/net/build/intermediates/tmp/manifest/androidTest/cs1e/debug/tempFile1ProcessTestManifest3429376528735958718.xml:5:15-41
+7        android:targetSdkVersion="33" />
+7-->/Users/mac/workspace/备份/ta_app_store_fuben/net/build/intermediates/tmp/manifest/androidTest/cs1e/debug/tempFile1ProcessTestManifest3429376528735958718.xml:5:42-71
+8
+9    <instrumentation
+9-->/Users/mac/workspace/备份/ta_app_store_fuben/net/build/intermediates/tmp/manifest/androidTest/cs1e/debug/tempFile1ProcessTestManifest3429376528735958718.xml:11:5-15:72
+10        android:name="android.test.InstrumentationTestRunner"
+10-->/Users/mac/workspace/备份/ta_app_store_fuben/net/build/intermediates/tmp/manifest/androidTest/cs1e/debug/tempFile1ProcessTestManifest3429376528735958718.xml:11:22-75
+11        android:functionalTest="false"
+11-->/Users/mac/workspace/备份/ta_app_store_fuben/net/build/intermediates/tmp/manifest/androidTest/cs1e/debug/tempFile1ProcessTestManifest3429376528735958718.xml:14:22-52
+12        android:handleProfiling="false"
+12-->/Users/mac/workspace/备份/ta_app_store_fuben/net/build/intermediates/tmp/manifest/androidTest/cs1e/debug/tempFile1ProcessTestManifest3429376528735958718.xml:13:22-53
+13        android:label="Tests for com.zeekrlife.net.test"
+13-->/Users/mac/workspace/备份/ta_app_store_fuben/net/build/intermediates/tmp/manifest/androidTest/cs1e/debug/tempFile1ProcessTestManifest3429376528735958718.xml:15:22-70
+14        android:targetPackage="com.zeekrlife.net.test" />
+14-->/Users/mac/workspace/备份/ta_app_store_fuben/net/build/intermediates/tmp/manifest/androidTest/cs1e/debug/tempFile1ProcessTestManifest3429376528735958718.xml:12:22-68
+15
+16    <permission
+16-->[androidx.core:core:1.9.0] /Users/mac/.gradle/caches/transforms-3/66ccf679e2e2787fdf000cde50de7369/transformed/core-1.9.0/AndroidManifest.xml:22:5-24:47
+17        android:name="com.zeekrlife.net.test.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+17-->[androidx.core:core:1.9.0] /Users/mac/.gradle/caches/transforms-3/66ccf679e2e2787fdf000cde50de7369/transformed/core-1.9.0/AndroidManifest.xml:23:9-81
+18        android:protectionLevel="signature" />
+18-->[androidx.core:core:1.9.0] /Users/mac/.gradle/caches/transforms-3/66ccf679e2e2787fdf000cde50de7369/transformed/core-1.9.0/AndroidManifest.xml:24:9-44
+19
+20    <uses-permission android:name="com.zeekrlife.net.test.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+20-->[androidx.core:core:1.9.0] /Users/mac/.gradle/caches/transforms-3/66ccf679e2e2787fdf000cde50de7369/transformed/core-1.9.0/AndroidManifest.xml:26:5-97
+20-->[androidx.core:core:1.9.0] /Users/mac/.gradle/caches/transforms-3/66ccf679e2e2787fdf000cde50de7369/transformed/core-1.9.0/AndroidManifest.xml:26:22-94
+21    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+21-->[com.github.zhaokaiqiang.klog:library:1.6.0] /Users/mac/.gradle/caches/transforms-3/d0c79b2e7704a865068440e00197753c/transformed/jetified-library-1.6.0/AndroidManifest.xml:11:5-81
+21-->[com.github.zhaokaiqiang.klog:library:1.6.0] /Users/mac/.gradle/caches/transforms-3/d0c79b2e7704a865068440e00197753c/transformed/jetified-library-1.6.0/AndroidManifest.xml:11:22-78
+22    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" /> <!-- send data -->
+23    <uses-permission android:name="android.permission.INTERNET" /> <!-- network state -->
+23-->[com.sensorsdata.analytics.android:common:0.1.4] /Users/mac/.gradle/caches/transforms-3/4a05d6e991b5e940647eb1b8cef724d0/transformed/jetified-common-0.1.4/AndroidManifest.xml:12:5-67
+23-->[com.sensorsdata.analytics.android:common:0.1.4] /Users/mac/.gradle/caches/transforms-3/4a05d6e991b5e940647eb1b8cef724d0/transformed/jetified-common-0.1.4/AndroidManifest.xml:12:22-64
+24    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- carrier -->
+24-->[com.sensorsdata.analytics.android:common:0.1.4] /Users/mac/.gradle/caches/transforms-3/4a05d6e991b5e940647eb1b8cef724d0/transformed/jetified-common-0.1.4/AndroidManifest.xml:14:5-79
+24-->[com.sensorsdata.analytics.android:common:0.1.4] /Users/mac/.gradle/caches/transforms-3/4a05d6e991b5e940647eb1b8cef724d0/transformed/jetified-common-0.1.4/AndroidManifest.xml:14:22-76
+25    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+25-->[com.sensorsdata.analytics.android:common:0.1.4] /Users/mac/.gradle/caches/transforms-3/4a05d6e991b5e940647eb1b8cef724d0/transformed/jetified-common-0.1.4/AndroidManifest.xml:16:5-75
+25-->[com.sensorsdata.analytics.android:common:0.1.4] /Users/mac/.gradle/caches/transforms-3/4a05d6e991b5e940647eb1b8cef724d0/transformed/jetified-common-0.1.4/AndroidManifest.xml:16:22-72
+26    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+26-->[com.sensorsdata.analytics.android:common:0.1.4] /Users/mac/.gradle/caches/transforms-3/4a05d6e991b5e940647eb1b8cef724d0/transformed/jetified-common-0.1.4/AndroidManifest.xml:17:5-76
+26-->[com.sensorsdata.analytics.android:common:0.1.4] /Users/mac/.gradle/caches/transforms-3/4a05d6e991b5e940647eb1b8cef724d0/transformed/jetified-common-0.1.4/AndroidManifest.xml:17:22-73
+27
+28    <application
+28-->/Users/mac/workspace/备份/ta_app_store_fuben/net/build/intermediates/tmp/manifest/androidTest/cs1e/debug/tempFile1ProcessTestManifest3429376528735958718.xml:7:5-9:19
+29        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+29-->[androidx.core:core:1.9.0] /Users/mac/.gradle/caches/transforms-3/66ccf679e2e2787fdf000cde50de7369/transformed/core-1.9.0/AndroidManifest.xml:28:18-86
+30        android:debuggable="true"
+31        android:extractNativeLibs="false" >
+32        <uses-library android:name="android.test.runner" />
+32-->/Users/mac/workspace/备份/ta_app_store_fuben/net/build/intermediates/tmp/manifest/androidTest/cs1e/debug/tempFile1ProcessTestManifest3429376528735958718.xml:8:9-60
+32-->/Users/mac/workspace/备份/ta_app_store_fuben/net/build/intermediates/tmp/manifest/androidTest/cs1e/debug/tempFile1ProcessTestManifest3429376528735958718.xml:8:23-57
+33
+34        <meta-data
+34-->[com.google.android.gms:play-services-basement:17.6.0] /Users/mac/.gradle/caches/transforms-3/5013deeb78808f5e5e4c50ccfdf9b8a4/transformed/jetified-play-services-basement-17.6.0/AndroidManifest.xml:23:9-25:69
+35            android:name="com.google.android.gms.version"
+35-->[com.google.android.gms:play-services-basement:17.6.0] /Users/mac/.gradle/caches/transforms-3/5013deeb78808f5e5e4c50ccfdf9b8a4/transformed/jetified-play-services-basement-17.6.0/AndroidManifest.xml:24:13-58
+36            android:value="@integer/google_play_services_version" />
+36-->[com.google.android.gms:play-services-basement:17.6.0] /Users/mac/.gradle/caches/transforms-3/5013deeb78808f5e5e4c50ccfdf9b8a4/transformed/jetified-play-services-basement-17.6.0/AndroidManifest.xml:25:13-66
+37
+38        <provider
+38-->[androidx.emoji2:emoji2:1.2.0] /Users/mac/.gradle/caches/transforms-3/5aa94a5d216b9913a4861704594728fd/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:24:9-32:20
+39            android:name="androidx.startup.InitializationProvider"
+39-->[androidx.emoji2:emoji2:1.2.0] /Users/mac/.gradle/caches/transforms-3/5aa94a5d216b9913a4861704594728fd/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:25:13-67
+40            android:authorities="com.zeekrlife.net.test.androidx-startup"
+40-->[androidx.emoji2:emoji2:1.2.0] /Users/mac/.gradle/caches/transforms-3/5aa94a5d216b9913a4861704594728fd/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:26:13-68
+41            android:exported="false" >
+41-->[androidx.emoji2:emoji2:1.2.0] /Users/mac/.gradle/caches/transforms-3/5aa94a5d216b9913a4861704594728fd/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:27:13-37
+42            <meta-data
+42-->[androidx.emoji2:emoji2:1.2.0] /Users/mac/.gradle/caches/transforms-3/5aa94a5d216b9913a4861704594728fd/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:29:13-31:52
+43                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+43-->[androidx.emoji2:emoji2:1.2.0] /Users/mac/.gradle/caches/transforms-3/5aa94a5d216b9913a4861704594728fd/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:30:17-75
+44                android:value="androidx.startup" />
+44-->[androidx.emoji2:emoji2:1.2.0] /Users/mac/.gradle/caches/transforms-3/5aa94a5d216b9913a4861704594728fd/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:31:17-49
+45            <meta-data
+45-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/mac/.gradle/caches/transforms-3/c309bef5bcdff65bc1fd5ea6f97b6064/transformed/jetified-lifecycle-process-2.4.1/AndroidManifest.xml:31:13-33:52
+46                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+46-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/mac/.gradle/caches/transforms-3/c309bef5bcdff65bc1fd5ea6f97b6064/transformed/jetified-lifecycle-process-2.4.1/AndroidManifest.xml:32:17-78
+47                android:value="androidx.startup" />
+47-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/mac/.gradle/caches/transforms-3/c309bef5bcdff65bc1fd5ea6f97b6064/transformed/jetified-lifecycle-process-2.4.1/AndroidManifest.xml:33:17-49
+48        </provider>
+49        <provider
+49-->[com.sensorsdata.analytics.android:common:0.1.4] /Users/mac/.gradle/caches/transforms-3/4a05d6e991b5e940647eb1b8cef724d0/transformed/jetified-common-0.1.4/AndroidManifest.xml:20:9-24:40
+50            android:name="com.sensorsdata.analytics.android.sdk.data.SensorsDataContentProvider"
+50-->[com.sensorsdata.analytics.android:common:0.1.4] /Users/mac/.gradle/caches/transforms-3/4a05d6e991b5e940647eb1b8cef724d0/transformed/jetified-common-0.1.4/AndroidManifest.xml:21:13-97
+51            android:authorities="com.zeekrlife.net.test.SensorsDataContentProvider"
+51-->[com.sensorsdata.analytics.android:common:0.1.4] /Users/mac/.gradle/caches/transforms-3/4a05d6e991b5e940647eb1b8cef724d0/transformed/jetified-common-0.1.4/AndroidManifest.xml:22:13-78
+52            android:enabled="true"
+52-->[com.sensorsdata.analytics.android:common:0.1.4] /Users/mac/.gradle/caches/transforms-3/4a05d6e991b5e940647eb1b8cef724d0/transformed/jetified-common-0.1.4/AndroidManifest.xml:23:13-35
+53            android:exported="false" />
+53-->[com.sensorsdata.analytics.android:common:0.1.4] /Users/mac/.gradle/caches/transforms-3/4a05d6e991b5e940647eb1b8cef724d0/transformed/jetified-common-0.1.4/AndroidManifest.xml:24:13-37
+54
+55        <meta-data
+55-->[com.sensorsdata.analytics.android:common:0.1.4] /Users/mac/.gradle/caches/transforms-3/4a05d6e991b5e940647eb1b8cef724d0/transformed/jetified-common-0.1.4/AndroidManifest.xml:26:9-28:48
+56            android:name="com.sensorsdata.analytics.android.MainProcessName"
+56-->[com.sensorsdata.analytics.android:common:0.1.4] /Users/mac/.gradle/caches/transforms-3/4a05d6e991b5e940647eb1b8cef724d0/transformed/jetified-common-0.1.4/AndroidManifest.xml:27:13-77
+57            android:value="com.zeekrlife.net.test" />
+57-->[com.sensorsdata.analytics.android:common:0.1.4] /Users/mac/.gradle/caches/transforms-3/4a05d6e991b5e940647eb1b8cef724d0/transformed/jetified-common-0.1.4/AndroidManifest.xml:28:13-45
+58        <meta-data
+58-->[com.sensorsdata.analytics.android:common:0.1.4] /Users/mac/.gradle/caches/transforms-3/4a05d6e991b5e940647eb1b8cef724d0/transformed/jetified-common-0.1.4/AndroidManifest.xml:29:9-31:37
+59            android:name="com.sensorsdata.analytics.android.version"
+59-->[com.sensorsdata.analytics.android:common:0.1.4] /Users/mac/.gradle/caches/transforms-3/4a05d6e991b5e940647eb1b8cef724d0/transformed/jetified-common-0.1.4/AndroidManifest.xml:30:13-69
+60            android:value="0.1.4" />
+60-->[com.sensorsdata.analytics.android:common:0.1.4] /Users/mac/.gradle/caches/transforms-3/4a05d6e991b5e940647eb1b8cef724d0/transformed/jetified-common-0.1.4/AndroidManifest.xml:31:13-34
+61    </application>
+62
+63</manifest>

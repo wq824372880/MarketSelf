@@ -1,0 +1,21 @@
+<resources>
+    <string name="task_state_openable">打开</string>
+    <string name="task_state_downloadable">下载</string>
+    <string name="task_state_updatable">更新</string>
+    <string name="task_state_download_pending">准备中</string>
+    <string name="task_state_download_progress">下载中</string>o
+    <string name="task_state_download_paused">恢复下载</string>
+    <string name="task_state_download_completed">安装</string>
+    <string name="task_state_installable">安装</string>
+    <string name="task_state_install_pending">等待安装</string>
+    <string name="task_state_install_started">安装中</string>
+    <string name="task_state_install_progress">安装中</string>
+    <string name="task_state_install_completed">已安装</string>
+    <string name="task_state_need_pay_activity">购买会员</string>
+
+    <string name="task_state_download_error_default_toast">下载失败，请重试</string>
+    <string name="task_state_install_error_default_toast">安装失败，请重试</string>
+    <string name="task_state_install_progress_default_toast">正在安装应用，请稍后</string>
+
+    <string name="app_install_force_update_tips">因系统原因，应用强制更新中</string>
+</resources>

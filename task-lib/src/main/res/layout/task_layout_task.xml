@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <View
+        android:id="@+id/view_action"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/selector_bg_btn_common"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.zeekrlife.task.base.widget.CircleProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:max="100"
+        android:visibility="invisible"
+        app:defaultColor="@color/task_layout_state_bg_color"
+        app:stateBlockColor="@color/task_layout_state_block_color"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:progress="80"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/tv_state"
+        android:layout_width="@dimen/helper.dp.136"
+        android:layout_height="@dimen/helper.dp.64"
+        android:gravity="center"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:textAppearance="?attr/textAppearanceTitleLarge"
+        android:textColor="@color/selector_text_color_btn_common"
+        android:textSize="@dimen/helper.sp.24"
+        android:lineSpacingMultiplier="0.7"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</merge>

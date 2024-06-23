@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zeekr.component.rebound.ZeekrReboundHorizontalLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+<com.zeekrlife.market.app.widget.DetailRecyclerView
+    android:id="@+id/rv_image"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:paddingTop="@dimen/dp.57"
+    android:clipToPadding="false"
+    android:paddingHorizontal="@dimen/dp.91"
+    android:overScrollMode="never"
+    android:scrollbars="none"
+    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+    tools:listitem="@layout/item_app_detail_image" />
+    </com.zeekr.component.rebound.ZeekrReboundHorizontalLayout>
+

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:bottom="@dimen/tv_menu_focus_padding"
+        android:left="@dimen/tv_menu_focus_padding"
+        android:right="@dimen/tv_menu_focus_padding"
+        android:top="@dimen/tv_menu_focus_padding">
+        <shape android:shape="rectangle">
+            <corners android:radius="@dimen/tv_focus_corners" />
+            <solid android:color="@color/theme_main_button_background_color" />
+        </shape>
+    </item>
+    <item android:shape="rectangle">
+        <shape>
+            <corners android:radius="@dimen/tv_focus_corners" />
+            <stroke
+                android:width="@dimen/tv_focus_stroke_width"
+                android:color="@color/secondary" />
+        </shape>
+    </item>
+</layer-list>

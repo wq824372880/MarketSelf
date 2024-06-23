@@ -1,0 +1,13 @@
+#Tue Apr 02 17:15:46 CST 2024
+base.0=/Users/mac/workspace/备份/ta_app_store_fuben/task-aidl/build/intermediates/dex/debugAndroidTest/mergeLibDexDebugAndroidTest/3/classes.dex
+base.1=/Users/mac/workspace/备份/ta_app_store_fuben/task-aidl/build/intermediates/dex/debugAndroidTest/mergeLibDexDebugAndroidTest/7/classes.dex
+base.2=/Users/mac/workspace/备份/ta_app_store_fuben/task-aidl/build/intermediates/dex/debugAndroidTest/mergeProjectDexDebugAndroidTest/0/classes.dex
+base.3=/Users/mac/workspace/备份/ta_app_store_fuben/task-aidl/build/intermediates/dex/debugAndroidTest/mergeProjectDexDebugAndroidTest/13/classes.dex
+path.0=3/classes.dex
+path.1=7/classes.dex
+path.2=0/classes.dex
+path.3=13/classes.dex
+renamed.0=classes.dex
+renamed.1=classes2.dex
+renamed.2=classes3.dex
+renamed.3=classes4.dex

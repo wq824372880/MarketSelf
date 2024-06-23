@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zeekrlife.market.utils.FocusBorderConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/selector_focus_border_view"
+    android:descendantFocusability="blocksDescendants"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:paddingHorizontal="@dimen/tv_18"
+    android:paddingVertical="@dimen/tv_15">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/image_view_item_icon"
+        android:layout_width="@dimen/tv_80"
+        android:layout_height="@dimen/tv_80"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:round="@dimen/tv_8"
+        tools:src="@tools:sample/avatars" />
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/applet_shadow"
+        android:layout_width="@dimen/tv_18"
+        android:layout_height="wrap_content"
+        android:src="@drawable/applet_shadow"
+        app:layout_constraintBottom_toBottomOf="@+id/image_view_item_icon"
+        app:layout_constraintEnd_toEndOf="@+id/image_view_item_icon"
+        app:round="@dimen/tv_8" />
+
+    <TextView
+        android:id="@+id/text_view_item_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/tv_28"
+        android:layout_marginEnd="@dimen/tv_8"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:maxLines="1"
+        android:textAppearance="?attr/textAppearanceTitleLarge"
+        android:textColor="@color/theme_main_text_color"
+        android:textSize="@dimen/tv_28"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintBottom_toTopOf="@id/text_view_item_slogan"
+        app:layout_constraintEnd_toEndOf="@id/btn_view_download"
+        app:layout_constraintEnd_toStartOf="@id/btn_view_download"
+        app:layout_constraintStart_toEndOf="@id/image_view_item_icon"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"
+        tools:text="喜马拉雅我尽快发货无可奉告未开发给娃" />
+
+    <TextView
+        android:id="@+id/text_view_item_slogan"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/tv_21"
+        android:alpha=".6"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:maxLines="1"
+        android:text="无法为客户服务规范为何开个文化馆分为非接口为华为废物空间和服务进口货物峰峻文化王劲晖"
+        android:textAppearance="?attr/textAppearanceTitleSmall"
+        android:textColor="@color/theme_main_text_color"
+        android:textSize="@dimen/tv_22"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/btn_view_download"
+        app:layout_constraintStart_toStartOf="@id/text_view_item_name"
+        app:layout_constraintTop_toBottomOf="@id/text_view_item_name" />
+
+    <com.zeekrlife.task.base.widget.TaskLayoutX
+        android:id="@+id/btn_view_download"
+        android:layout_width="@dimen/tv_152"
+        android:layout_height="@dimen/tv_64"
+        android:focusable="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.zeekr.component.tv.button.ZeekrTVButton
+        android:id="@+id/btn_view_applet"
+        style="@style/Widget.ZeekrTVButton.GhostButton"
+        android:layout_width="@dimen/tv_152"
+        android:layout_height="@dimen/tv_64"
+        android:text="@string/task_state_openable"
+        android:textSize="@dimen/tv_14"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</com.zeekrlife.market.utils.FocusBorderConstraintLayout>

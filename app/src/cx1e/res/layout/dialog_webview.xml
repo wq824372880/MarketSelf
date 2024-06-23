@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="1496dp"
+            android:layout_height="552dp">
+
+            <com.just.agentweb.AgentWebView
+                android:id="@+id/agent_web_view"
+                android:layout_width="1496dp"
+                android:layout_height="522dp"
+                android:background="@color/theme_main_background_color"
+                android:fadingEdge="none"
+                android:fadingEdgeLength="30dp"
+                android:overScrollMode="never"
+                android:requiresFadingEdge="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+
+            </com.just.agentweb.AgentWebView>
+
+            <LinearLayout
+                android:id="@+id/layout_loading"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/theme_main_background_color"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone"
+                tools:visibility="visible">
+
+                <com.zeekr.lottie.ZeekrLoadingInfiniteView
+                    android:id="@+id/lottie_view"
+                    android:layout_width="160dp"
+                    android:layout_height="160dp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_loading_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="60dp"
+                    android:text="加载中..."
+                    android:textColor="@color/theme_btn_text_color"
+                    android:textSize="@dimen/dp.36" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_error"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/theme_main_background_color"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="visible"
+                tools:visibility="gone">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/state_error_img"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:src="@drawable/load_error" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/state_error_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginBottom="@dimen/helper.dp.12"
+                    android:text="@string/helper_loading_error_tip"
+                    android:textColor="@color/theme_btn_text_color"
+                    android:textSize="@dimen/dp.36" />
+
+            </LinearLayout>
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="96dp"
+            android:layout_marginTop="@dimen/dp.28">
+
+            <com.zeekr.component.button.ZeekrButton
+                android:id="@+id/bt_single_real"
+                style="@style/Widget.ZeekrButton.RealButton"
+                android:layout_width="970dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:text="@string/common_confirm"
+                tools:visibility="gone" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/layout_bt_double"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone"
+                tools:visibility="visible">
+
+                <com.zeekr.component.button.ZeekrButton
+                    android:id="@+id/bt_double_real"
+                    style="@style/Widget.ZeekrButton.RealButton"
+                    android:layout_width="710dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="40dp"
+                    android:text="@string/common_refresh"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintHorizontal_chainStyle="packed"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toLeftOf="@id/bt_double_ghost"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.zeekr.component.button.ZeekrButton
+                    android:id="@+id/bt_double_ghost"
+                    style="@style/Widget.ZeekrButton.GhostButton"
+                    android:layout_width="710dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/common_cancel"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toRightOf="@id/bt_double_real"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </FrameLayout>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</merge>

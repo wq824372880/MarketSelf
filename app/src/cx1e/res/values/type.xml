@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    
+    
+    <style name="TextAppearance.custom.zeekr.DisplaySmall" parent="TextAppearance.zeekr.DisplaySmall">
+        <item name="android:textSize">@dimen/custom_font_size_display_small</item>
+        <item name="lineHeight">@dimen/custom_line_height_display_small</item>
+        <item name="android:lineHeight" tools:targetApi="p">@dimen/custom_line_height_display_small</item>
+    </style>
+
+    <style name="TextAppearance.custom.zeekr.DisplayMedium" parent="TextAppearance.zeekr.DisplayMedium">
+        <item name="android:textSize">@dimen/custom_font_size_display_medium</item>
+        <item name="lineHeight">@dimen/custom_line_height_display_medium</item>
+        <item name="android:lineHeight" tools:targetApi="p">@dimen/custom_line_height_display_medium</item>
+    </style>
+
+    <style name="TextAppearance.custom.zeekr.DisplayLarge" parent="TextAppearance.zeekr.DisplayLarge">
+        <item name="android:textSize">@dimen/custom_font_size_display_large</item>
+        <item name="lineHeight">@dimen/custom_line_height_display_large</item>
+        <item name="android:lineHeight" tools:targetApi="p">@dimen/custom_line_height_display_large</item>
+    </style>
+
+    <style name="TextAppearance.custom.zeekr.HeadlineSmall" parent="TextAppearance.zeekr.HeadlineSmall">
+        <item name="android:textSize">@dimen/custom_font_size_headline_small</item>
+        <item name="lineHeight">@dimen/custom_line_height_headline_small</item>
+        <item name="android:lineHeight" tools:targetApi="p">@dimen/custom_line_height_headline_small</item>
+    </style>
+
+    <style name="TextAppearance.custom.zeekr.HeadlineMedium" parent="TextAppearance.zeekr.HeadlineMedium">
+        <item name="android:textSize">@dimen/custom_font_size_headline_medium</item>
+        <item name="lineHeight">@dimen/custom_line_height_headline_medium</item>
+        <item name="android:lineHeight" tools:targetApi="p">@dimen/custom_line_height_headline_medium</item>
+    </style>
+
+    <style name="TextAppearance.custom.zeekr.HeadlineLarge" parent="TextAppearance.zeekr.HeadlineLarge">
+        <item name="android:textSize">@dimen/custom_font_size_headline_large</item>
+        <item name="lineHeight">@dimen/custom_line_height_headline_large</item>
+        <item name="android:lineHeight" tools:targetApi="p">@dimen/custom_line_height_headline_large</item>
+    </style>
+
+    <style name="TextAppearance.custom.zeekr.TitleSmall" parent="TextAppearance.zeekr.TitleSmall">
+        <item name="android:textSize">@dimen/custom_font_size_title_small</item>
+        <item name="lineHeight">@dimen/custom_line_height_title_small</item>
+        <item name="android:lineHeight" tools:targetApi="p">@dimen/custom_line_height_title_small</item>
+    </style>
+
+    <style name="TextAppearance.custom.zeekr.TitleMedium" parent="TextAppearance.zeekr.TitleMedium">
+        <item name="android:textSize">@dimen/custom_font_size_title_medium</item>
+        <item name="lineHeight">@dimen/custom_line_height_title_medium</item>
+        <item name="android:lineHeight" tools:targetApi="p">@dimen/custom_line_height_title_medium</item>
+    </style>
+
+    <style name="TextAppearance.custom.zeekr.TitleLarge" parent="TextAppearance.zeekr.TitleLarge">
+        <item name="android:textSize">@dimen/custom_font_size_title_large</item>
+        <item name="lineHeight">@dimen/custom_line_height_title_large</item>
+        <item name="android:lineHeight" tools:targetApi="p">@dimen/custom_line_height_title_large</item>
+    </style>
+
+    <style name="TextAppearance.custom.zeekr.BodySmall" parent="TextAppearance.zeekr.BodySmall">
+        <item name="android:textSize">@dimen/custom_font_size_body_small</item>
+        <item name="lineHeight">@dimen/custom_line_height_body_small</item>
+        <item name="android:lineHeight" tools:targetApi="p">@dimen/custom_line_height_body_small</item>
+    </style>
+
+    <style name="TextAppearance.custom.zeekr.BodyMedium" parent="TextAppearance.zeekr.BodyMedium">
+        <item name="android:textSize">@dimen/custom_font_size_body_medium</item>
+        <item name="lineHeight">@dimen/custom_line_height_body_medium</item>
+        <item name="android:lineHeight" tools:targetApi="p">@dimen/custom_line_height_body_medium</item>
+    </style>
+
+    <style name="TextAppearance.custom.zeekr.BodyLarge" parent="TextAppearance.zeekr.BodyLarge">
+        <item name="android:textSize">@dimen/custom_font_size_body_large</item>
+        <item name="lineHeight">@dimen/custom_line_height_body_large</item>
+        <item name="android:lineHeight" tools:targetApi="p">@dimen/custom_line_height_body_large</item>
+    </style>
+
+    <style name="TextAppearance.custom.zeekr.LabelSmall" parent="TextAppearance.zeekr.LabelSmall">
+        <item name="android:textSize">@dimen/custom_font_size_label_small</item>
+        <item name="lineHeight">@dimen/custom_line_height_label_small</item>
+        <item name="android:lineHeight" tools:targetApi="p">@dimen/custom_line_height_label_small</item>
+    </style>
+
+    <style name="TextAppearance.custom.zeekr.LabelMedium" parent="TextAppearance.zeekr.LabelMedium">
+        <item name="android:textSize">@dimen/custom_font_size_label_medium</item>
+        <item name="lineHeight">@dimen/custom_line_height_label_large</item>
+        <item name="android:lineHeight" tools:targetApi="p">@dimen/custom_line_height_label_medium</item>
+    </style>
+
+    <style name="TextAppearance.custom.zeekr.LabelLarge" parent="TextAppearance.zeekr.LabelLarge">
+        <item name="android:textSize">@dimen/custom_font_size_label_large</item>
+        <item name="lineHeight">@dimen/custom_line_height_headline_large</item>
+        <item name="android:lineHeight" tools:targetApi="p">@dimen/custom_line_height_label_large</item>
+    </style>
+
+</resources>

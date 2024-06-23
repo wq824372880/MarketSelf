@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_main_background_color"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp.52"
+        android:layout_marginTop="@dimen/dp.24"
+        android:text="设置"
+        android:textColor="@color/theme_main_text_color"
+        android:textSize="@dimen/setting_title_text_size" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp.52"
+        android:layout_marginTop="@dimen/dp.52"
+        android:layout_marginRight="@dimen/dp.96"
+        android:overScrollMode="never"
+        android:paddingBottom="@dimen/dp.64"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/setting_layout_auto_update"
+                layout="@layout/item_setting"
+                android:layout_width="@dimen/dp.1000"
+                android:layout_height="@dimen/setting_item_height" />
+
+            <include
+                android:id="@+id/setting_layout_version"
+                layout="@layout/item_setting"
+                android:layout_width="@dimen/dp.1000"
+                android:layout_height="@dimen/setting_item_height"
+                android:layout_marginTop="@dimen/dp.20" />
+
+            <include
+                android:id="@+id/setting_layout_check_update"
+                layout="@layout/item_setting"
+                android:layout_width="@dimen/dp.1000"
+                android:layout_height="@dimen/setting_item_height"
+                android:layout_marginTop="@dimen/dp.20" />
+
+            <include
+                android:id="@+id/setting_layout_user_agreement"
+                layout="@layout/item_setting"
+                android:layout_width="@dimen/dp.1000"
+                android:layout_height="@dimen/setting_item_height"
+                android:layout_marginTop="@dimen/dp.20" />
+
+            <include
+                android:id="@+id/setting_layout_privacy_agreement"
+                layout="@layout/item_setting"
+                android:layout_width="@dimen/dp.1000"
+                android:layout_height="@dimen/setting_item_height"
+                android:layout_marginTop="@dimen/dp.20" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginEnd="@dimen/dp.114"
+        android:src="@drawable/setting_right_bg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="1130dp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

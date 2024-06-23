@@ -1,0 +1,88 @@
+buildscript {
+    repositories {
+        maven { url 'https://jitpack.io' }
+        maven { url 'https://maven.aliyun.com/repository/public' }
+        maven { url 'https://maven.aliyun.com/repository/central' }
+        maven { url 'https://maven.aliyun.com/repository/google' }
+        maven { url 'https://maven.aliyun.com/repository/gradle-plugin' }
+        google()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:7.4.1'
+        classpath 'org.jetbrains.kotlin:kotlin-gradle-plugin:1.8.0'
+        classpath 'io.github.wurensen:gradle-android-plugin-aspectjx:3.3.2'
+        // 添加神策分析 android-gradle-plugin2 依赖
+        classpath 'com.sensorsdata.analytics.android:android-gradle-plugin2:3.5.2'
+    }
+}
+
+allprojects {
+    repositories {
+        maven { url 'https://jitpack.io' }
+        maven { url 'https://maven.aliyun.com/repository/public' }
+        maven { url 'https://maven.aliyun.com/repository/central' }
+        maven { url 'https://maven.aliyun.com/repository/google' }
+        maven { url 'https://maven.aliyun.com/repository/gradle-plugin' }
+//        maven {
+//            url 'https://devops-maven.zeekrlife.com/repository/snc-public/'
+//            credentials {
+//                username = 'sncdeploy' //deployment
+//                password = 'Dmj97e7hyZjC' //Dmj97e7hyZjC
+//            }
+//        }
+        maven {
+            url 'https://devops-maven.zeekrlife.com/repository/snc-release/'
+            credentials {
+                username = 'sncdeploy'
+                password = '5JA1sx11cy7v'
+            }
+        }
+
+        maven {
+            url 'https://devops-maven.zeekrlife.com/repository/snc-public/'
+            credentials {
+                username = 'sncdeploy'
+                password = '5JA1sx11cy7v'
+            }
+        }
+
+        maven {
+            url 'https://devops-maven.zeekrlife.com/repository/snc-snapshot/'
+            credentials {
+                username = 'sncdeploy'
+                password = '5JA1sx11cy7v'
+            }
+        }
+
+        maven {
+            url 'https://devops-maven.zeekrlife.com/repository/maven-releases/'
+            credentials {
+                username = 'sncdeploy'
+                password = '5JA1sx11cy7v'
+            }
+        }
+
+        maven {
+            allowInsecureProtocol = true
+            url 'http://maven.aliyun.com/nexus/content/repositories/releases/'
+        }
+
+        maven {
+            //公网aromeext maven库地址
+            url "https://mvn.cloud.alipay.com/nexus/content/groups/open/"
+        }
+        google()
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+
+//allprojects {
+//    configurations.configureEach {
+//        resolutionStrategy {
+//            force "com.alibaba:fastjson:2.0.14"
+//        }
+//    }
+//}

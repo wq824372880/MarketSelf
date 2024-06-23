@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="@dimen/tv_64"
+    android:orientation="vertical"
+    android:paddingHorizontal="@dimen/tv_41">
+
+    <com.scwang.smart.refresh.layout.SmartRefreshLayout
+        android:id="@+id/smart_refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srlEnableLoadMore="false"
+        app:srlEnableRefresh="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.core.widget.NestedScrollView
+                android:id="@+id/layout_recommend_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fadingEdge="vertical"
+                android:fadingEdgeLength="@dimen/tv_40"
+                android:focusable="false"
+                android:overScrollMode="never"
+                android:requiresFadingEdge="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:focusable="false"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:orientation="vertical">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/fl_banner"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:focusable="true"
+                            android:focusableInTouchMode="true"
+                            android:layout_marginHorizontal="@dimen/tv_32">
+
+                            <com.zhpan.bannerview.BannerViewPager
+                                android:id="@+id/banner_view"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/tv_292"
+                                android:focusable="false"
+                                android:focusableInTouchMode="false"
+                                app:bvp_indicator_slide_mode="worm"
+                                app:bvp_page_style="multi_page_overlap"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintLeft_toLeftOf="parent"
+                                app:layout_constraintRight_toRightOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <androidx.constraintlayout.utils.widget.ImageFilterView
+                                android:id="@+id/shape_banner_round"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/tv_250"
+                                android:background="@drawable/banner_foreground"
+                                android:scaleType="fitXY"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintLeft_toLeftOf="parent"
+                                app:layout_constraintRight_toRightOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <com.zeekrlife.market.utils.FocusBorderConstraintLayout
+                                android:id="@+id/view_select_banner_item"
+                                android:layout_width="@dimen/tv_1074"
+                                android:layout_height="@dimen/tv_308"
+                                android:background="@drawable/selector_focus_border_view"
+                                android:focusable="true"
+                                android:focusableInTouchMode="true"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintLeft_toLeftOf="parent"
+                                app:layout_constraintRight_toRightOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <com.zhpan.bannerview.indicator.DrawableIndicator
+                            android:id="@+id/indicator_view"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="@dimen/tv_20" />
+
+                        <HorizontalScrollView
+                            android:id="@+id/scrollView_recommend_adsense"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/tv_20"
+                            android:layout_marginStart="@dimen/tv_6"
+                            android:fadingEdge="horizontal"
+                            android:fadingEdgeLength="@dimen/tv_43"
+                            android:nestedScrollingEnabled="true"
+                            android:overScrollMode="never"
+                            android:requiresFadingEdge="horizontal"
+                            android:scrollbars="none">
+
+                            <include
+                                android:id="@+id/layout_recommend_adsense"
+                                layout="@layout/item_recommend_adsense_view" />
+                        </HorizontalScrollView>
+                    </LinearLayout>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rv_recommend_apps"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/tv_18"
+                        android:layout_marginBottom="@dimen/tv_42"
+                        android:paddingBottom="@dimen/tv_6"
+                        android:nestedScrollingEnabled="true" />
+
+                </LinearLayout>
+
+            </androidx.core.widget.NestedScrollView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.scwang.smart.refresh.layout.SmartRefreshLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

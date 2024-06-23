@@ -1,0 +1,6 @@
+com.zeekrlife.market.task.aidl.test.task-aidl-androidTest-0 /Users/mac/workspace/备份/ta_app_store_fuben/task-aidl/build/generated/res/resValues/androidTest/debug
+com.zeekrlife.market.task.aidl.test.task-aidl-androidTest-1 /Users/mac/workspace/备份/ta_app_store_fuben/task-aidl/build/generated/res/rs/androidTest/debug
+com.zeekrlife.market.task.aidl.test.task-aidl-mergeDebugAndroidTestResources-2 /Users/mac/workspace/备份/ta_app_store_fuben/task-aidl/build/intermediates/incremental/debugAndroidTest/mergeDebugAndroidTestResources/merged.dir
+com.zeekrlife.market.task.aidl.test.task-aidl-mergeDebugAndroidTestResources-3 /Users/mac/workspace/备份/ta_app_store_fuben/task-aidl/build/intermediates/incremental/debugAndroidTest/mergeDebugAndroidTestResources/stripped.dir
+com.zeekrlife.market.task.aidl.test.task-aidl-merged_res-4 /Users/mac/workspace/备份/ta_app_store_fuben/task-aidl/build/intermediates/merged_res/debugAndroidTest
+com.zeekrlife.market.task.aidl.test.task-aidl-packaged_res-5 /Users/mac/workspace/备份/ta_app_store_fuben/task-aidl/build/intermediates/packaged_res/debug

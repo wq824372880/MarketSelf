@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/theme_main_background_color"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_marginStart="@dimen/dp.80"
+        android:layout_marginEnd="@dimen/dp.80"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="@dimen/dp.120"
+        android:orientation="vertical">
+       <androidx.constraintlayout.utils.widget.ImageFilterView
+           android:id="@+id/iv_icon"
+           android:src="@drawable/img_bg_default"
+           app:round="@dimen/dp.16"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toTopOf="parent"
+           android:layout_width="@dimen/dp.120"
+           android:layout_height="@dimen/dp.120"/>
+        <androidx.constraintlayout.utils.widget.ImageFilterView
+            android:id="@+id/iv_watermark"
+            app:layout_constraintBottom_toBottomOf="@+id/iv_icon"
+            app:layout_constraintEnd_toEndOf="@+id/iv_icon"
+            android:src="@drawable/ic_applet_watermark"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_40"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            app:layout_constraintStart_toEndOf="@+id/iv_icon"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:id="@+id/tv_applet_text"
+            android:layout_width="0dp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:layout_marginTop="@dimen/dp.5"
+            android:layout_marginStart="@dimen/dp_40"
+            android:layout_marginEnd="@dimen/dp.16"
+            android:layout_height="wrap_content"
+            android:text="小程序fewfhwelfhwefelwwekfhwefkwlhfwelkhflkwehlwhfwkn"
+            android:textColor="@color/theme_btn_text_color"
+            android:textSize="@dimen/dp_40" />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_applet_desc"
+            app:layout_constraintStart_toEndOf="@+id/iv_icon"
+            app:layout_constraintTop_toBottomOf="@+id/tv_applet_text"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="0dp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:layout_marginStart="@dimen/dp_40"
+            android:layout_marginEnd="@dimen/dp.16"
+            android:layout_height="wrap_content"
+            android:text="小程序fewfhwelfhwefelwwekfhwefkwlhfwelkhflkwehlwhfwkn"
+            android:alpha=".6"
+            android:textColor="@color/theme_btn_text_color"
+            android:textSize="@dimen/dp.32"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</merge>

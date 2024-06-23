@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="down_load_progress_indicator_color">#F88650</color>
+
+    <color name="tv_progressbar_background">#66141416</color>
+    <color name="tv_progressbar_progress">#CC141416</color>
+</resources>

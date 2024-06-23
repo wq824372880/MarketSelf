@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_launcher"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:paddingBottom="@dimen/tv_15">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_icon"
+        android:layout_width="@dimen/tv_192"
+        android:layout_height="@dimen/tv_192"
+        android:src="@drawable/img_bg_default"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/tv_40"
+        android:singleLine="true"
+        android:textAppearance="?attr/textAppearanceBodyLarge"
+        android:textColor="@color/theme_main_text_color"
+        android:textSize="@dimen/tv_44"
+        app:layout_constraintStart_toEndOf="@id/iv_icon"
+        app:layout_constraintTop_toTopOf="@id/iv_icon"
+        tools:ignore="RtlHardcoded" />
+
+    <TextView
+        android:id="@+id/tv_app_slogan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/tv_3"
+        android:alpha=".4"
+        android:ellipsize="end"
+        android:maxEms="30"
+        android:maxLines="1"
+        android:textAppearance="?attr/textAppearanceLabelSmall"
+        android:textColor="@color/theme_main_text_color"
+        android:textSize="@dimen/tv_28"
+        app:layout_constraintStart_toEndOf="@+id/iv_icon"
+        app:layout_constraintStart_toStartOf="@id/tv_app_name"
+        app:layout_constraintTop_toBottomOf="@+id/tv_app_name"
+        tools:ignore="RtlHardcoded" />
+
+    <widget.TVTaskLayoutX
+        android:id="@+id/layout_task"
+        android:layout_width="@dimen/tv_234"
+        android:layout_height="@dimen/tv_76"
+        android:layout_marginStart="@dimen/tv_30"
+        android:layout_marginTop="@dimen/tv_14"
+        android:background="@drawable/selector_focus_border_view"
+        android:descendantFocusability="blocksDescendants"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        app:layout_constraintBottom_toBottomOf="@id/iv_icon"
+        app:layout_constraintStart_toEndOf="@+id/iv_icon"
+        app:layout_constraintTop_toBottomOf="@+id/tv_app_slogan"
+        app:scaleValue="1.05"
+        />
+
+    <com.zeekr.component.tv.button.ZeekrTVButton
+        android:id="@+id/btn_stop_downloading"
+        style="@style/Widget.ZeekrTVButton.GhostButton"
+        android:layout_width="@dimen/tv_234"
+        android:layout_height="@dimen/tv_76"
+        android:layout_marginStart="@dimen/tv_16"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:text="@string/app_detail_btn_cancel_download"
+        app:scaleValue="1.05"
+        android:textSize="@dimen/tv_28"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/layout_task"
+        app:layout_constraintStart_toEndOf="@+id/layout_task"
+        app:layout_constraintTop_toTopOf="@id/layout_task" />
+
+    <FrameLayout
+        android:id="@+id/layout_btn_uninstall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/tv_16"
+        android:visibility="gone"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        app:layout_constraintBottom_toBottomOf="@+id/layout_task"
+        app:layout_constraintStart_toEndOf="@+id/layout_task"
+        app:layout_constraintTop_toTopOf="@id/layout_task">
+
+        <com.zeekr.component.tv.button.ZeekrTVButton
+            android:id="@+id/btn_uninstall"
+            style="@style/Widget.ZeekrTVButton.GhostButton"
+            android:layout_width="@dimen/tv_234"
+            android:layout_height="@dimen/tv_76"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:text="@string/app_detail_btn_uninstall"
+            app:scaleValue="1.05"
+            android:textSize="@dimen/tv_28"
+            android:visibility="visible" />
+
+        <com.zeekr.component.tv.button.ZeekrTVButton
+            android:id="@+id/btn_uninstall_tip"
+            android:layout_width="@dimen/tv_77"
+            android:layout_height="@dimen/tv_32"
+            android:alpha="0"
+            app:scaleValue="1.05"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <include
+        android:id="@+id/layout_app_detail_apk_info"
+        layout="@layout/view_app_detail_apk_info"
+        android:layout_width="@dimen/tv_781"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_icon"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_app_detail_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/tv_446"
+        android:text="@string/app_detail_introduce"
+        android:textAppearance="?attr/textAppearanceBodyMedium"
+        android:textColor="@color/theme_main_text_color"
+        android:textSize="@dimen/tv_32"
+        app:layout_constraintStart_toStartOf="@+id/iv_icon"
+        app:layout_constraintTop_toBottomOf="@+id/iv_icon"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/layout_app_detail_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/tv_16"
+        android:layout_marginEnd="@dimen/tv_80"
+        android:focusable="false"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/tv_app_detail_info"
+        app:layout_constraintTop_toBottomOf="@+id/tv_app_detail_info">
+
+        <TextView
+            android:id="@+id/tv_app_detail_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alpha=".6"
+            android:ellipsize="end"
+            android:focusable="false"
+            android:maxLines="3"
+            android:textColor="@color/theme_main_text_color"
+            android:textSize="@dimen/tv_28" />
+
+        <com.zeekrlife.market.utils.FocusBorderTextView
+            android:id="@+id/tv_app_detail_desc_check_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/tv_8"
+            android:background="@drawable/selector_focus_border_view"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center"
+            android:padding="@dimen/tv_6"
+            android:text="查看更多"
+            android:textColor="@color/secondary"
+            android:textSize="@dimen/tv_28"
+            android:visibility="gone" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <TextView
+        android:id="@+id/tv_app_detail_version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/tv_40"
+        android:focusable="false"
+        android:text="@string/app_detail_version_info"
+        android:textAppearance="?attr/textAppearanceBodyMedium"
+        android:textColor="@color/theme_main_text_color"
+        android:textSize="@dimen/tv_32"
+        app:layout_constraintStart_toStartOf="@+id/layout_app_detail_desc"
+        app:layout_constraintTop_toBottomOf="@+id/layout_app_detail_desc"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/layout_app_detail_version_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/tv_16"
+        android:layout_marginEnd="@dimen/tv_40"
+        android:focusable="false"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/tv_app_detail_version"
+        app:layout_constraintTop_toBottomOf="@+id/tv_app_detail_version">
+
+        <TextView
+            android:id="@+id/tv_app_detail_version_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/tv_40"
+            android:alpha=".6"
+            android:ellipsize="end"
+            android:focusable="false"
+            android:maxLines="3"
+            android:textColor="@color/theme_main_text_color"
+            android:textSize="@dimen/tv_28" />
+
+        <com.zeekrlife.market.utils.FocusBorderTextView
+            android:id="@+id/tv_app_detail_version_info_check_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/tv_8"
+            android:background="@drawable/selector_focus_border_view"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center"
+            android:padding="@dimen/tv_6"
+            android:text="查看更多"
+            android:textColor="@color/secondary"
+            android:textSize="@dimen/tv_28"
+            android:visibility="gone" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <TextView
+        android:id="@+id/tv_developers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/tv_40"
+        android:alpha=".6"
+        android:text="@string/app_detail_developer"
+        android:textAppearance="?attr/textAppearanceLabelMedium"
+        android:textColor="@color/theme_main_text_color"
+        android:textSize="@dimen/tv_24"
+        app:layout_constraintStart_toStartOf="@+id/layout_app_detail_version_info"
+        app:layout_constraintTop_toBottomOf="@id/layout_app_detail_version_info"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tv_developers_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:alpha=".6"
+        android:textColor="@color/theme_main_text_color"
+        android:textSize="@dimen/tv_24"
+        app:layout_constraintStart_toStartOf="@+id/tv_developers"
+        app:layout_constraintTop_toBottomOf="@id/tv_developers"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tv_privacy_policy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/tv_40"
+        android:alpha=".6"
+        android:text="@string/app_detail_privacy_policy"
+        android:textAppearance="?attr/textAppearanceLabelMedium"
+        android:textColor="@color/theme_main_text_color"
+        android:textSize="@dimen/tv_24"
+        app:layout_constraintStart_toStartOf="@+id/tv_developers"
+        app:layout_constraintTop_toBottomOf="@id/tv_developers_value"
+        app:tint="@color/theme_main_text_color"
+        tools:ignore="MissingConstraints" />
+
+    <com.zeekrlife.market.utils.FocusBorderTextView
+        android:id="@+id/tv_privacy_policy_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/tv_90"
+        android:alpha=".6"
+        android:background="@drawable/selector_focus_border_view"
+        android:ellipsize="end"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:maxLines="1"
+        android:padding="@dimen/tv_6"
+        android:textSize="@dimen/tv_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/tv_privacy_policy"
+        app:layout_constraintTop_toBottomOf="@id/tv_privacy_policy"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

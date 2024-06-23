@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:padding="@dimen/tv_40"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.constraintlayout.utils.widget.ImageFilterView
+                android:id="@+id/image_view_icon"
+                android:layout_width="@dimen/tv_124"
+                android:layout_height="@dimen/tv_124"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:round="@dimen/tv_app_item_icon_round" />
+
+            <TextView
+                android:id="@+id/text_view_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/tv_28"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                android:textAppearance="?attr/textAppearanceBodyMedium"
+                android:textColor="@color/theme_main_text_color"
+                android:textSize="@dimen/tv_40"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/image_view_icon"
+                app:layout_constraintTop_toTopOf="@id/image_view_icon"
+                tools:text="喜马拉雅" />
+
+            <TextView
+                android:id="@+id/text_view_slogan"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:alpha=".6"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="slogan"
+                android:textAppearance="?attr/textAppearanceTitleSmall"
+                android:textColor="@color/theme_main_text_color"
+                android:textSize="@dimen/tv_28"
+                app:layout_constraintBottom_toBottomOf="@id/image_view_icon"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@id/text_view_name" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl_app_buttons"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/tv_36"
+            android:clipChildren="false"
+            android:clipToPadding="false"
+            app:layout_constraintHorizontal_chainStyle="packed">
+
+            <widget.TVTaskLayoutX
+                android:id="@+id/bt_download"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/tv_86"
+                android:layout_marginEnd="@dimen/tv_24"
+                android:background="@drawable/selector_focus_border_view"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                app:layout_constraintEnd_toStartOf="@id/bt_new_version_info"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:scaleValue="1.05"
+
+                />
+
+            <com.zeekr.component.tv.button.ZeekrTVButton
+                android:id="@+id/bt_new_version_info"
+                style="@style/Widget.ZeekrTVButton.GhostButton"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/tv_86"
+                android:layout_marginEnd="@dimen/tv_24"
+                android:focusable="true"
+                app:scaleValue="1.05"
+                android:visibility="visible"
+                android:focusableInTouchMode="true"
+                android:text="@string/bt_check_new_version_info"
+                android:textSize="@dimen/tv_32"
+                app:layout_constraintEnd_toStartOf="@id/bt_app_info"
+                app:layout_constraintStart_toEndOf="@id/bt_download"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.zeekr.component.tv.button.ZeekrTVButton
+                android:id="@+id/bt_app_info"
+                style="@style/Widget.ZeekrTVButton.GhostButton"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/tv_86"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                app:scaleValue="1.05"
+                android:text="@string/bt_check_app_info"
+                android:textSize="@dimen/tv_32"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/bt_new_version_info"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</merge>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:shape="rectangle">
+        <shape>
+            <corners android:radius="@dimen/tv_focus_corners" />
+            <solid android:color="@color/transparent" />
+            <stroke
+                android:width="@dimen/tv_focus_stroke_width"
+                android:color="@color/secondary" />
+        </shape>
+    </item>
+</layer-list>

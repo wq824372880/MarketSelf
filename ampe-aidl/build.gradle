@@ -1,0 +1,71 @@
+plugins {
+    id 'com.android.library'
+    id 'maven-publish'
+}
+
+
+android {
+    compileSdk 33
+
+    defaultConfig {
+        minSdk 28
+        targetSdk 33
+        versionCode 1
+        versionName "1.0"
+    }
+
+    buildTypes {
+        debug {
+            debuggable true
+        }
+        uat {
+            debuggable true
+            minifyEnabled false
+            zipAlignEnabled false
+        }
+        release {
+            debuggable false
+            minifyEnabled false
+            zipAlignEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
+    }
+}
+
+
+
+task androidSourcesJar(type: Jar) {
+    from android.sourceSets.main.java.getSrcDirs()
+    archiveClassifier.set('sources')
+}
+def repo_groupId = 'com.zeekrlife.ampe.aidl'
+def repo_artifactId = 'ampe-aidl'
+def repo_versionCode = '1.0.2'
+def maven_url = 'https://devops-maven.zeekrlife.com/repository/snc-release/'
+afterEvaluate {
+    publishing {
+        publications {
+            println("$maven_url  $repo_groupId:$repo_artifactId:$repo_versionCode")
+            maven(MavenPublication) {
+                from components.release
+                artifact androidSourcesJar
+                groupId repo_groupId
+                artifactId repo_artifactId
+                version repo_versionCode
+            }
+        }
+        repositories {
+            maven {
+                url = maven_url
+                credentials {
+                    username = 'deployment'
+                    password = 'Dmj97e7hyZjC'
+                }
+            }
+        }
+    }
+}

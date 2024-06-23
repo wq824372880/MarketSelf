@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingDefaultResource">
+
+    <dimen name="helper.dp.0">0dp</dimen>
+    <dimen name="helper.dp.1">1dp</dimen>
+    <dimen name="helper.dp.2">4dp</dimen>
+    <dimen name="helper.dp.3">3dp</dimen>
+    <dimen name="helper.dp.4">4dp</dimen>
+    <dimen name="helper.dp.5">5dp</dimen>
+    <dimen name="helper.dp.6">6dp</dimen>
+    <dimen name="helper.dp.12">12dp</dimen>
+    <dimen name="helper.dp.13">13dp</dimen>
+    <dimen name="helper.dp.14">14dp</dimen>
+    <dimen name="helper.dp.16">16dp</dimen>
+    <dimen name="helper.dp.20">20dp</dimen>
+    <dimen name="helper.dp.24">24dp</dimen>
+    <dimen name="helper.dp.26">26dp</dimen>
+    <dimen name="helper.dp.30">30dp</dimen>
+    <dimen name="helper.dp.42">42dp</dimen>
+    <dimen name="helper.dp.54">54dp</dimen>
+    <dimen name="helper.dp.60">60dp</dimen>
+    <dimen name="helper.dp.64">64dp</dimen>
+    <dimen name="helper.dp.80">80dp</dimen>
+    <dimen name="helper.dp.108">108dp</dimen>
+
+    <dimen name="helper.dp.136">136dp</dimen>
+    <dimen name="helper.dp.140">140dp</dimen>
+    <dimen name="helper.dp.180">180dp</dimen>
+    <dimen name="helper.dp.320">320dp</dimen>
+    <dimen name="helper.dp.358">358dp</dimen>
+    <dimen name="helper.dp.1060">1060dp</dimen>
+
+    <dimen name="helper.sp.24">24sp</dimen>
+    <dimen name="helper.sp.26">26sp</dimen>
+    <dimen name="helper.sp.28">28sp</dimen>
+
+    <dimen name="app_icon_radius">@dimen/dp.16</dimen>
+    <dimen name="tv_badge_text_size">@dimen/dp.28</dimen>
+</resources>

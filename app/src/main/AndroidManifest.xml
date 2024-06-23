@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.zeekrlife.market">
+
+    <queries>
+        <package android:name="com.alipay.arome.app" />
+        <provider android:authorities="com.alipay.mobile.arome.provider" />
+        <package android:name="com.alipay.arome.ext"/>
+    </queries>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+
+<!--    <uses-permission android:name="android.permission.READ_PHONE_STATE" />-->
+<!--    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />-->
+    <uses-permission
+        android:name="android.permission.READ_LOGS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission
+        android:name="android.permission.BROADCAST_PACKAGE_REMOVED"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+<!--    <uses-permission android:name="android.permission.SYSTEM_OVERLAY_WINDOW" />-->
+
+    <uses-permission
+        android:name="android.permission.QUERY_ALL_PACKAGES"
+        tools:ignore="QueryAllPackagesPermission" />
+    <uses-permission android:name="android.permission.REORDER_TASKS" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+<!--    <uses-permission android:name="android.permission.START_ACTIVITIES_FROM_BACKGROUND" />-->
+<!--    <uses-permission android:name="android.permission.USE_FULL_SCREEN_INTENT" />-->
+<!--    <permission android:name="android.permission.START_ACTIVITIES_FROM_BACKGROUND"-->
+<!--        android:protectionLevel="signature|privileged|vendorPrivileged|oem|verifier" />-->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        tools:node="remove" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"
+        tools:node="remove" />
+
+
+
+    <application
+        android:extractNativeLibs="true"
+        android:name="com.zeekrlife.market.app.App"
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_logo"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:ignore="GoogleAppIndexingWarning,UnusedAttribute,LockedOrientationActivity"
+        tools:replace="android:allowBackup">
+
+        <meta-data
+            android:name= "zeekr_allow_custom_animation"
+            android:value="true"/>
+
+        <activity
+            android:name=".ui.activity.HomeActivity"
+            android:launchMode="singleTop"
+            android:exported="true"
+            android:screenOrientation="landscape" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER"/>
+                <action android:name="com.zeekr.multidisplay.activity" />
+            </intent-filter>
+            <meta-data
+                android:name="zeekr_app_display_config"
+                android:resource="@xml/app_display_config1" />
+        </activity>
+
+
+        <activity
+            android:name="com.zeekrlife.market.ui.activity.LauncherActivity"
+            android:screenOrientation="landscape"
+            android:exported="true">
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.MAIN" />-->
+
+<!--                <category android:name="android.intent.category.LAUNCHER" />-->
+<!--            </intent-filter>-->
+        </activity>
+
+
+
+        <activity
+            android:theme="@style/AromeTheme"
+            android:noHistory="true"
+            android:name="com.zeekrlife.market.ui.activity.AromeActivity"
+            android:launchMode="singleInstance"
+            android:screenOrientation="landscape"
+            android:exported="false">
+        </activity>
+
+        <activity
+            android:name="com.zeekrlife.market.ui.activity.LoginActivity"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="adjustResize"
+            android:screenOrientation="landscape" />
+
+        <activity
+            android:name="com.zeekrlife.market.ui.activity.AppDetailActivity"
+            android:theme="@style/FullScreenTheme"
+            android:launchMode="singleTop"
+            android:screenOrientation="landscape" />
+
+        <activity
+            android:name="com.zeekrlife.market.ui.activity.WebActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="landscape" />
+
+        <activity
+            android:name="com.zeekrlife.market.ui.activity.AppDetailImgPreviewActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="landscape" />
+
+        <activity
+            android:name=".ui.activity.SearchActivity"
+            android:launchMode="singleTop"
+            android:windowSoftInputMode="stateUnspecified|adjustResize|stateHidden|adjustPan"
+            android:screenOrientation="landscape" />
+
+        <activity
+            android:name="com.zeekrlife.market.ui.activity.EntryActivity"
+            android:excludeFromRecents="true"
+            android:launchMode="singleInstance"
+            android:exported="true"
+            android:theme="@style/EntryTheme">
+
+            <!-- 用于神策系统中的 Debug 实时查看、App 点击分析、可视化全埋点等-->
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:scheme="sa9d85143b" />
+            </intent-filter>
+
+            <!-- Schema -->
+            <intent-filter>
+                <data
+                    android:host="appstore.ecarx.com"
+                    android:scheme="xc" />
+
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+
+            <intent-filter>
+                <data
+                    android:host="com.zeekrlife.market"
+                    android:scheme="xc" />
+
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+
+            <!-- App Links -->
+            <intent-filter
+                android:autoVerify="true"
+                tools:targetApi="m">
+                <data
+                    android:host="appstore.ecarx.com"
+                    android:scheme="http" />
+                <data
+                    android:host="appstore.ecarx.com"
+                    android:scheme="https" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:multiprocess="true"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <meta-data
+            android:name="android.webkit.WebView.EnableSafeBrowsing"
+            android:value="true" />
+
+
+<!--         需要使用到应用的appId、appSecret来做权限校验。可前往ECARX开发者平台（https://open.ecarx.com.cn/#/document/2040）申请appId、appSecret -->
+        <meta-data
+                    android:name="eCarX_OpenAPI_AppId"
+                    android:value="60f1722613f07a15cd0c8816edbf0729" />
+
+        <meta-data
+                    android:name="eCarX_OpenAPI_AppKey"
+                    android:value="0d8907b0dc12ae5878f0d7dd645eabad" />
+
+        <receiver
+            android:exported="true"
+            android:name=".receiver.BootReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+            <meta-data
+                android:name="APP_DELAY_BOOT_LEVEL"
+                android:value="1" />
+        </receiver>
+
+        <provider
+            android:authorities="${applicationId}.AppPropertiesProvider"
+            android:name=".provider.AppPropertiesProvider"
+            android:exported="true" />
+        <provider
+            android:authorities="${applicationId}.AppletPropertiesProvider"
+            android:name=".provider.AppletPropertiesProvider"
+            android:exported="true" />
+
+        <service android:name=".autoupdate.ThirdUpdateService" />
+
+        <service
+            android:name=".update.CheckUpdateService"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="zeekr.intent.action.APPSTORE_UPDATE_SERVICE" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

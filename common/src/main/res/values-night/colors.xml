@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <color name="zeekr_theme_main_color">#FF1EF1C6</color>
+    <color name="zeekr_theme_main_color_pressed">#FF1EF1C6</color>
+
+    <color name="day_or_night_main_color">@android:color/black</color>
+    <color name="day_or_night_main_reverse_color">@android:color/white</color>
+
+    <color name="theme_btn_bg_color">@color/color_36383F</color>
+    <color name="theme_btn_bg_disabled_color">@color/color_99_36383F</color>
+    <color name="theme_btn_bg_dark_color">@color/md_theme_dark_primary</color>
+    <color name="theme_btn_bg_dark_disabled_color">@color/color_99_E1E3E5</color>
+
+    <color name="theme_btn_text_color">@color/md_theme_dark_primary</color>
+    <color name="theme_btn_text_enable_color">@color/color_99_E5E6E8</color>
+    <color name="theme_btn_text_dark_color">@color/md_theme_dark_background</color>
+    <color name="theme_btn_text_dark_enable_color">@color/color_99_141518</color>
+
+    <color name="theme_main_background_color">@color/md_theme_dark_background</color>
+    <!--加载文字颜色-->
+    <color name="upload_text_color">@color/md_theme_dark_primary</color>
+</resources>

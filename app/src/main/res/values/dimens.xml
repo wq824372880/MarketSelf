@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--    <dimen name="dp.0">0dp</dimen>-->
+    <!--    <dimen name="dp.0.1">0.1dp</dimen>-->
+    <!--    <dimen name="dp.1">1dp</dimen>-->
+    <!--    <dimen name="dp.2">2dp</dimen>-->
+    <!--    <dimen name="dp.3">3dp</dimen>-->
+    <!--    <dimen name="dp_4">4dp</dimen>-->
+    <!--    <dimen name="dp.5">5dp</dimen>-->
+    <!--    <dimen name="dp.6">6dp</dimen>-->
+    <!--    <dimen name="dp.7">7dp</dimen>-->
+    <!--    <dimen name="dp.8">8dp</dimen>-->
+    <!--    <dimen name="dp.9">9dp</dimen>-->
+    <!--    <dimen name="dp_10">10dp</dimen>-->
+    <!--    <dimen name="dp.11">11dp</dimen>-->
+    <!--    <dimen name="dp.12">12dp</dimen>-->
+    <!--    <dimen name="dp.13">13dp</dimen>-->
+    <!--    <dimen name="dp_14">14dp</dimen>-->
+    <!--    <dimen name="dp.15">15dp</dimen>-->
+    <!--    <dimen name="dp.16">16dp</dimen>-->
+    <!--    <dimen name="dp.17">17dp</dimen>-->
+    <!--    <dimen name="dp.18">18dp</dimen>-->
+    <!--    <dimen name="dp.19">19dp</dimen>-->
+    <!--    <dimen name="dp.20">20dp</dimen>-->
+    <!--    <dimen name="dp.21">21dp</dimen>-->
+    <!--    <dimen name="dp.22">22dp</dimen>-->
+    <!--    <dimen name="dp.23">23dp</dimen>-->
+    <!--    <dimen name="dp.24">24dp</dimen>-->
+    <!--    <dimen name="dp.25">25dp</dimen>-->
+    <!--    <dimen name="dp.26">26dp</dimen>-->
+    <!--    <dimen name="dp.27">27dp</dimen>-->
+    <!--    <dimen name="dp.28">28dp</dimen>-->
+    <!--    <dimen name="dp.29">29dp</dimen>-->
+    <!--    <dimen name="dp.30">30dp</dimen>-->
+    <!--    <dimen name="dp.31">31dp</dimen>-->
+    <!--    <dimen name="dp.32">32dp</dimen>-->
+    <!--    <dimen name="dp.33">33dp</dimen>-->
+    <!--    <dimen name="dp.34">34dp</dimen>-->
+    <!--    <dimen name="dp.35">35dp</dimen>-->
+    <!--    <dimen name="dp.36">36dp</dimen>-->
+    <!--    <dimen name="dp.37">37dp</dimen>-->
+    <!--    <dimen name="dp.38">38dp</dimen>-->
+    <!--    <dimen name="dp.39">39dp</dimen>-->
+    <!--    <dimen name="dp_40">40dp</dimen>-->
+    <!--    <dimen name="dp.41">41dp</dimen>-->
+    <!--    <dimen name="dp.42">42dp</dimen>-->
+    <!--    <dimen name="dp.43">43dp</dimen>-->
+    <!--    <dimen name="dp.44">44dp</dimen>-->
+    <!--    <dimen name="dp.45">45dp</dimen>-->
+    <!--    <dimen name="dp.46">46dp</dimen>-->
+    <!--    <dimen name="dp.47">47dp</dimen>-->
+    <!--    <dimen name="dp.48">48dp</dimen>-->
+    <!--    <dimen name="dp.49">49dp</dimen>-->
+    <!--    <dimen name="dp.50">50dp</dimen>-->
+    <!--    <dimen name="dp.51">51dp</dimen>-->
+    <!--    <dimen name="dp.52">52dp</dimen>-->
+    <!--    <dimen name="dp.53">53dp</dimen>-->
+    <!--    <dimen name="dp.54">54dp</dimen>-->
+    <!--    <dimen name="dp.55">55dp</dimen>-->
+    <!--    <dimen name="dp.56">56dp</dimen>-->
+    <!--    <dimen name="dp.57">57dp</dimen>-->
+    <!--    <dimen name="dp.58">58dp</dimen>-->
+    <!--    <dimen name="dp.59">59dp</dimen>-->
+    <!--    <dimen name="dp.60">60dp</dimen>-->
+    <!--    <dimen name="dp.61">61dp</dimen>-->
+    <!--    <dimen name="dp.62">62dp</dimen>-->
+    <!--    <dimen name="dp.63">63dp</dimen>-->
+    <!--    <dimen name="dp.64">64dp</dimen>-->
+    <!--    <dimen name="dp.65">65dp</dimen>-->
+    <!--    <dimen name="dp.66">66dp</dimen>-->
+    <!--    <dimen name="dp.67">67dp</dimen>-->
+    <!--    <dimen name="dp.68">68dp</dimen>-->
+    <!--    <dimen name="dp.69">69dp</dimen>-->
+    <!--    <dimen name="dp.70">70dp</dimen>-->
+    <!--    <dimen name="dp.71">71dp</dimen>-->
+    <!--    <dimen name="dp.72">72dp</dimen>-->
+    <!--    <dimen name="dp.73">73dp</dimen>-->
+    <!--    <dimen name="dp.74">74dp</dimen>-->
+    <!--    <dimen name="dp.75">75dp</dimen>-->
+    <!--    <dimen name="dp.76">76dp</dimen>-->
+    <!--    <dimen name="dp.77">77dp</dimen>-->
+    <!--    <dimen name="dp.78">78dp</dimen>-->
+    <!--    <dimen name="dp.79">79dp</dimen>-->
+    <!--    <dimen name="dp.80">80dp</dimen>-->
+    <!--    <dimen name="dp.81">81dp</dimen>-->
+    <!--    <dimen name="dp.82">82dp</dimen>-->
+    <!--    <dimen name="dp.83">83dp</dimen>-->
+    <!--    <dimen name="dp.84">84dp</dimen>-->
+    <!--    <dimen name="dp.85">85dp</dimen>-->
+    <!--    <dimen name="dp.86">86dp</dimen>-->
+    <!--    <dimen name="dp.87">87dp</dimen>-->
+    <!--    <dimen name="dp.88">88dp</dimen>-->
+    <!--    <dimen name="dp.89">89dp</dimen>-->
+    <!--    <dimen name="dp.90">90dp</dimen>-->
+    <!--    <dimen name="dp.91">91dp</dimen>-->
+    <!--    <dimen name="dp.92">92dp</dimen>-->
+    <!--    <dimen name="dp.93">93dp</dimen>-->
+    <!--    <dimen name="dp.94">94dp</dimen>-->
+    <!--    <dimen name="dp.95">95dp</dimen>-->
+    <!--    <dimen name="dp.96">96dp</dimen>-->
+    <!--    <dimen name="dp.97">97dp</dimen>-->
+    <!--    <dimen name="dp.98">98dp</dimen>-->
+    <!--    <dimen name="dp.99">99dp</dimen>-->
+    <!--    <dimen name="dp.100">100dp</dimen>-->
+    <!--    <dimen name="dp.110">110dp</dimen>-->
+    <!--    <dimen name="dp.116">116dp</dimen>-->
+    <!--    <dimen name="dp.120">120dp</dimen>-->
+    <!--    <dimen name="dp.125">125dp</dimen>-->
+    <!--    <dimen name="dp.130">130dp</dimen>-->
+    <!--    <dimen name="dp.140">140dp</dimen>-->
+    <!--    <dimen name="dp.144">144dp</dimen>-->
+    <!--    <dimen name="dp.150">150dp</dimen>-->
+    <!--    <dimen name="dp.164">164dp</dimen>-->
+    <!--    <dimen name="dp.170">170dp</dimen>-->
+    <!--    <dimen name="dp.176">176dp</dimen>-->
+    <!--    <dimen name="dp.180">180dp</dimen>-->
+    <!--    <dimen name="dp.200">200dp</dimen>-->
+    <!--    <dimen name="dp.224">224dp</dimen>-->
+    <!--    <dimen name="dp.234">234dp</dimen>-->
+    <!--    <dimen name="dp.236">236dp</dimen>-->
+    <!--    <dimen name="dp.270">270dp</dimen>-->
+    <!--    <dimen name="dp.280">280dp</dimen>-->
+    <!--    <dimen name="dp.296">296dp</dimen>-->
+    <!--    <dimen name="dp.300">300dp</dimen>-->
+    <!--    <dimen name="dp.306">306dp</dimen>-->
+    <!--    <dimen name="dp.307">307dp</dimen>-->
+    <!--    <dimen name="dp.308">308dp</dimen>-->
+    <!--    <dimen name="dp.308.5">308.5dp</dimen>-->
+    <!--    <dimen name="dp.309">309dp</dimen>-->
+    <!--    <dimen name="dp.310">310dp</dimen>-->
+    <!--    <dimen name="dp.311">311dp</dimen>-->
+    <!--    <dimen name="dp.312">312dp</dimen>-->
+    <!--    <dimen name="dp.313">313dp</dimen>-->
+    <!--    <dimen name="dp.314">314dp</dimen>-->
+    <!--    <dimen name="dp.315">314dp</dimen>-->
+    <!--    <dimen name="dp.316">316dp</dimen>-->
+    <!--    <dimen name="dp.318">318dp</dimen>-->
+    <!--    <dimen name="dp.320">320dp</dimen>-->
+    <!--    <dimen name="dp.321">321dp</dimen>-->
+    <!--    <dimen name="dp.322">322dp</dimen>-->
+    <!--    <dimen name="dp.323">323dp</dimen>-->
+    <!--    <dimen name="dp.323.5">323.5dp</dimen>-->
+    <!--    <dimen name="dp.324">324dp</dimen>-->
+    <!--    <dimen name="dp.325">325dp</dimen>-->
+    <!--    <dimen name="dp.326">326dp</dimen>-->
+    <!--    <dimen name="dp.327">327dp</dimen>-->
+    <!--    <dimen name="dp.328">328dp</dimen>-->
+    <!--    <dimen name="dp.330">330dp</dimen>-->
+    <!--    <dimen name="dp.512">512dp</dimen>-->
+    <!--    <dimen name="dp.800">800dp</dimen>-->
+    <!--    <dimen name="dp.1396">1396dp</dimen>-->
+    <!--    <dimen name="dp.160">160dp</dimen>-->
+    <!--    <dimen name="dp.380">380dp</dimen>-->
+    <!--    <dimen name="dp.648">648dp</dimen>-->
+    <!--    <dimen name="dp.1000">1000dp</dimen>-->
+    <!--    <dimen name="dp.562">562dp</dimen>-->
+    <!--    <dimen name="dp.136">136dp</dimen>-->
+    <!--    <dimen name="dp.184">184dp</dimen>-->
+    <!--    <dimen name="dp.1224">1224dp</dimen>-->
+    <!--    <dimen name="dp.688">688dp</dimen>-->
+    <!--    <dimen name="dp.615">615dp</dimen>-->
+    <!--    <dimen name="dp.168">168dp</dimen>-->
+    <!--    <dimen name="dp.400">400dp</dimen>-->
+    <!--    <dimen name="dp.936">936dp</dimen>-->
+    <!--    <dimen name="dp.600">600dp</dimen>-->
+    <!--    <dimen name="dp.246">246dp</dimen>-->
+    <!--    <dimen name="dp.304">304dp</dimen>-->
+    <!--    <dimen name="dp.1428">1428dp</dimen>-->
+    <!--    &lt;!&ndash; 默认按钮的圆角大小 &ndash;&gt;-->
+    <!--    <dimen name="button_circle_size">999dp</dimen>-->
+    <!--    &lt;!&ndash; 通用对话框圆角大小 &ndash;&gt;-->
+    <!--    <dimen name="dialog_ui_round_size">15dp</dimen>-->
+
+    <!--    <dimen name="item_app_icon_length">100dp</dimen>-->
+
+    <!--    &lt;!&ndash;My App&ndash;&gt;-->
+    <!--    <dimen name="my_app_title_text_size">40sp</dimen>-->
+
+    <!--    &lt;!&ndash;App Item&ndash;&gt;-->
+    <!--    <dimen name="app_item_iv_icon_size">@dimen/dp.100</dimen>-->
+    <!--    <dimen name="app_item_tv_app_name_text_size">@dimen/helper.sp.28</dimen>-->
+    <!--    <dimen name="app_item_task_btn_width">@dimen/dp.136</dimen>-->
+    <!--    <dimen name="app_item_task_btn_height">@dimen/dp.64</dimen>-->
+
+    <!--    &lt;!&ndash; 应用详情 &ndash;&gt;-->
+    <!--    <dimen name="app_detail_iv_icon_size">@dimen/dp.170</dimen>-->
+    <!--    <dimen name="app_detail_iv_icon_margin_top">@dimen/dp_10</dimen>-->
+    <!--    <dimen name="app_detail_iv_icon_margin_left">@dimen/dp.60</dimen>-->
+    <!--    <dimen name="app_detail_tv_app_name_text_size">@dimen/helper.sp.24</dimen>-->
+    <!--    <dimen name="app_detail_tv_version_name_margin_horizontal">@dimen/dp.60</dimen>-->
+    <!--    <dimen name="app_detail_tv_version_name_margin_top">@dimen/dp.87</dimen>-->
+    <!--    <dimen name="app_detail_tv_version_name_text_size">@dimen/helper.sp.24</dimen>-->
+    <!--    <dimen name="app_detail_tv_size_margin_horizontal">@dimen/dp.60</dimen>-->
+    <!--    <dimen name="app_detail_tv_size_margin_top">@dimen/dp.36</dimen>-->
+    <!--    <dimen name="app_detail_tv_size_text_size">@dimen/helper.sp.24</dimen>-->
+    <!--    <dimen name="app_detail_layout_task_width">@dimen/dp.180</dimen>-->
+    <!--    <dimen name="app_detail_layout_task_height">@dimen/dp.70</dimen>-->
+    <!--    <dimen name="app_detail_layout_task_margin_bottom">@dimen/dp.60</dimen>-->
+    <!--    <dimen name="app_detail_layout_task_margin_end">@dimen/dp.60</dimen>-->
+    <dimen name="app_detail_dialog_uninstall_top_margin">@dimen/dp.94</dimen>
+    <dimen name="app_detail_image_preview_rv_divider">@dimen/dp.96</dimen>
+
+
+    <dimen name="recommend_banner_indicator_gap_padding">@dimen/dp.8</dimen>
+    <dimen name="recommend_banner_indicator_height">@dimen/dp.16</dimen>
+    <dimen name="recommend_banner_indicator_slider_width_normal">@dimen/dp.6</dimen>
+    <dimen name="recommend_banner_indicator_slider_width_check">@dimen/dp.13</dimen>
+    <dimen name="recommend_banner_page_margin">@dimen/dp.15</dimen>
+    <dimen name="recommend_banner_reveal_width">248dp</dimen>
+    <dimen name="recommend_banner_imageview_round">@dimen/dp.8</dimen>
+    <dimen name="recommend_banner_imageview_height">@dimen/dp.304</dimen>
+    <dimen name="recommend_adsense_imageview_round">6dp</dimen>
+    <dimen name="recommend_adsense_imageview_margin_left">@dimen/dp_40</dimen>
+    <dimen name="recommend_apps_rv_item_decoration_space">@dimen/dp.100</dimen>
+
+
+
+    <dimen name="custom_font_size_label_small">28sp</dimen>
+    <dimen name="custom_font_size_label_medium">32sp</dimen>
+    <dimen name="custom_font_size_label_large">34sp</dimen>
+
+    <dimen name="custom_font_size_body_small">34sp</dimen>
+    <dimen name="custom_font_size_body_medium">36sp</dimen>
+    <dimen name="custom_font_size_body_large">40sp</dimen>
+
+    <dimen name="custom_font_size_title_small">44sp</dimen>
+    <dimen name="custom_font_size_title_medium">48sp</dimen>
+    <dimen name="custom_font_size_title_large">52sp</dimen>
+
+    <dimen name="custom_font_size_headline_small">56sp</dimen>
+    <dimen name="custom_font_size_headline_medium">72sp</dimen>
+    <dimen name="custom_font_size_headline_large">88sp</dimen>
+
+    <dimen name="custom_font_size_display_small">100sp</dimen>
+    <dimen name="custom_font_size_display_medium">112sp</dimen>
+    <dimen name="custom_font_size_display_large">64sp</dimen>
+
+    <dimen name="custom_line_height_label_small">42sp</dimen>  //
+    <dimen name="custom_line_height_label_medium">48sp</dimen>//
+    <dimen name="custom_line_height_label_large">52sp</dimen>
+
+    <dimen name="custom_line_height_body_small">52sp</dimen>
+    <dimen name="custom_line_height_body_medium">54sp</dimen>//
+    <dimen name="custom_line_height_body_large">60sp</dimen>//
+
+    <dimen name="custom_line_height_title_small">66sp</dimen>//
+    <dimen name="custom_line_height_title_medium">72sp</dimen>//
+    <dimen name="custom_line_height_title_large">78sp</dimen>//
+
+    <dimen name="custom_line_height_headline_small">84sp</dimen>
+    <dimen name="custom_line_height_headline_medium">108sp</dimen>
+    <dimen name="custom_line_height_headline_large">58sp</dimen>
+
+    <dimen name="custom_line_height_display_small">46sp</dimen>
+    <dimen name="custom_line_height_display_medium">84sp</dimen>//
+    <dimen name="custom_line_height_display_large">64sp</dimen>
+</resources>

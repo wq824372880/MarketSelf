@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ctl_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_launcher"
+    tools:ignore="MissingPrefix">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/ctl_protocol"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="@dimen/tv_1471"
+            android:layout_height="@dimen/tv_647"
+            android:layout_marginTop="@dimen/tv_150"
+            android:src="@drawable/zeekr"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/tv_350"
+            android:text="极氪应用市场"
+            android:textColor="@color/theme_main_text_color"
+            android:textSize="@dimen/tv_64"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/tv_51"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_title">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/content_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/tv_248"
+                android:layout_marginEnd="@dimen/tv_248"
+                android:gravity="center_horizontal"
+                android:text="@string/privacy_1"
+                android:textSize="@dimen/tv_29"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+<!--            <androidx.appcompat.widget.AppCompatTextView-->
+<!--                android:id="@+id/content_2_1"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="@dimen/tv_318"-->
+<!--                android:text="@string/privacy_2_1"-->
+<!--                android:textSize="@dimen/tv_28"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toBottomOf="@id/content_1" />-->
+
+            <com.zeekrlife.market.utils.FocusBorderTextView
+                android:id="@+id/content_ua"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_focus_border_view"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:nextFocusDown="@id/tv_confirm"
+                android:text="@string/privacy_2_2"
+                android:textColor="@color/secondary"
+                android:textSize="@dimen/tv_29"
+                android:layout_marginStart="@dimen/tv_318"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/content_1"
+                 />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/content_2_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/privacy_2_3"
+                android:textSize="@dimen/tv_29"
+                app:layout_constraintBottom_toBottomOf="@id/content_ua"
+                app:layout_constraintStart_toEndOf="@id/content_ua"
+                app:layout_constraintTop_toTopOf="@id/content_ua" />
+
+            <com.zeekrlife.market.utils.FocusBorderTextView
+                android:id="@+id/content_pp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_focus_border_view"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:nextFocusDown="@id/tv_confirm"
+                android:text="@string/privacy_2_4"
+                android:textColor="@color/secondary"
+                android:textSize="@dimen/tv_29"
+                app:layout_constraintBottom_toBottomOf="@id/content_2_3"
+                app:layout_constraintStart_toEndOf="@id/content_2_3"
+                app:layout_constraintTop_toTopOf="@id/content_2_3" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/content_2_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/privacy_2_5"
+                android:textSize="@dimen/tv_29"
+                app:layout_constraintBottom_toBottomOf="@id/content_pp"
+                app:layout_constraintStart_toEndOf="@id/content_pp"
+                app:layout_constraintTop_toTopOf="@id/content_pp" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <com.zeekr.component.tv.button.ZeekrTVButton
+            android:id="@+id/tv_confirm"
+            style="@style/Widget.ZeekrTVButton.RealButton"
+            android:layout_width="@dimen/tv_307"
+            android:layout_height="@dimen/tv_64"
+            android:layout_marginTop="@dimen/tv_82"
+            android:layout_marginEnd="@dimen/tv_70"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:nextFocusRight="@id/tv_cancel"
+            android:nextFocusUp="@id/tv_content"
+            android:text="@string/common_confirm"
+            android:textSize="@dimen/tv_28"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@id/tv_cancel"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cl_content" />
+
+        <com.zeekr.component.tv.button.ZeekrTVButton
+            android:id="@+id/tv_cancel"
+            style="@style/Widget.ZeekrTVButton.GhostButton"
+            android:layout_width="@dimen/tv_307"
+            android:layout_height="@dimen/tv_64"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:nextFocusLeft="@id/tv_confirm"
+            android:nextFocusUp="@id/tv_content"
+            android:text="@string/common_cancel"
+            android:textSize="@dimen/tv_28"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/tv_confirm"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/tv_confirm"
+            app:layout_constraintTop_toTopOf="@id/tv_confirm" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

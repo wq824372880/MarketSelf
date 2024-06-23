@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/search_view_root"
+    android:fitsSystemWindows="true">
+
+    <com.hjq.shape.view.ShapeTextView
+        android:id="@+id/search_bar"
+        android:layout_width="@dimen/dp.432"
+        android:layout_height="@dimen/dp.86"
+        android:layout_marginStart="@dimen/dp.64"
+        android:layout_marginTop="@dimen/home_search_top_size"
+        android:drawableStart="@drawable/search_pressed"
+        android:drawablePadding="@dimen/dp.20"
+        android:gravity="center_vertical"
+        android:fitsSystemWindows="false"
+        android:paddingStart="@dimen/dp.30"
+        android:paddingEnd="@dimen/dp.20"
+        android:text="@string/app_search_enter_name"
+        android:textColor="@color/search_bg_color"
+        android:textSize="@dimen/home_search_size"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shape_solidColor="@color/theme_main_button_background_color"
+        app:shape_solidFocusedColor="@color/theme_main_button_background_color"
+        app:shape_solidPressedColor="@color/theme_main_button_background_color"
+        app:shape_textFocusedColor="@color/search_bg_color"
+        app:shape_radius="@dimen/dp.8"
+        android:transitionName="share_search_bar" />
+
+    <com.google.android.material.divider.MaterialDivider
+        android:id="@+id/divider_portrait"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/dp.518"
+        android:layout_marginBottom="@dimen/dp.64"
+        android:alpha="0.2"
+        android:background="@color/theme_main_divider_color"
+        android:visibility="invisible"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <com.zeekr.component.rebound.ZeekrReboundRefreshLayout
+        app:layout_constraintBottom_toTopOf="@+id/divider_landscape"
+        app:layout_constraintRight_toLeftOf="@+id/divider_portrait"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="@dimen/dp.200"
+        android:layout_width="@dimen/dp.518"
+        android:background="@color/transparent"
+        android:layout_height="0dp">
+        <com.zeekrlife.market.app.widget.verticaltablayout.VerticalTabLayout
+            android:id="@+id/tablayout"
+            android:layout_width="@dimen/dp.432"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/dp.64"
+            android:layout_marginBottom="@dimen/dp.15"
+            android:overScrollMode="never"
+            android:paddingBottom="@dimen/dp.20"
+            android:fadingEdge="vertical"
+            android:fadingEdgeLength="60dp"
+            android:requiresFadingEdge="vertical"
+            app:layout_constraintBottom_toTopOf="@+id/divider_landscape"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tab_height="@dimen/dp.132"
+            app:tab_mode="scrollable" />
+    </com.zeekr.component.rebound.ZeekrReboundRefreshLayout>
+
+    <com.google.android.material.divider.MaterialDivider
+        android:id="@+id/divider_landscape"
+        android:layout_width="@dimen/dp.432"
+        android:layout_height="1dp"
+        android:layout_marginStart="@dimen/dp.64"
+        android:alpha="0.2"
+        android:background="@color/theme_main_divider_color"
+        android:paddingTop="@dimen/helper.dp.20"
+        android:paddingBottom="@dimen/helper.dp.20"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.76" />
+
+    <com.zeekrlife.market.app.widget.verticaltablayout.VerticalTabLayout
+        android:id="@+id/tablayout_bottom"
+        android:layout_width="@dimen/dp.432"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="@dimen/dp.64"
+        android:layout_marginTop="@dimen/dp.32"
+        android:layout_marginBottom="@dimen/tab_layout_bottom_margin_bottom"
+        android:overScrollMode="never"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/divider_landscape"
+        app:tab_height="@dimen/dp.130"
+        app:tab_mode="fixed" />
+
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragment_container"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="@dimen/recommend_root_left_size"
+        android:layout_marginTop="@dimen/recommend_root_top_size"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/divider_portrait"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <include
+        android:id="@+id/home_loading"
+        layout="@layout/layout_loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:visibility="gone"
+        android:id="@+id/home_loading_skeleton"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/dp.64"
+        android:layout_marginTop="@dimen/home_search_size"
+        android:layout_marginEnd="132dp"
+        app:lottie_speed="1.2"
+        android:background="@color/theme_main_background_color"
+        app:lottie_autoPlay="true"
+        app:lottie_rawRes="@raw/home_loading_skeleton"
+        app:lottie_loop="true" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:alpha="0"
+        android:id="@+id/tv_search_action"
+        android:layout_width="180dp"
+        android:layout_height="@dimen/dp.64"
+        android:layout_marginTop="@dimen/tv_search_action_top"
+        android:layout_marginEnd="800dp"
+        android:gravity="center_vertical"
+        android:imeOptions="actionSearch"
+        android:paddingTop="@dimen/dp_10"
+        android:paddingEnd="@dimen/dp.80"
+        android:paddingBottom="@dimen/dp_10"
+        android:text="取消"
+        android:textColor="@color/theme_main_text_color"
+        android:textSize="32sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:transitionName="share_tv_search_action"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.zeekrlife.market.update">
+
+    <uses-permission android:name="zeekrlife.permission.APPSTORE_TASK" />
+</manifest>

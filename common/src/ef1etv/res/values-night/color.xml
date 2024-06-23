@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="theme_main_background_color">@color/md_theme_dark_background</color>
+    <!-- 文字颜色 -->
+    <color name="theme_main_text_color">@color/md_theme_dark_primary</color>
+    <color name="theme_main_text_color_opposite">@color/md_theme_dark_primary</color>
+    <!-- 分割线颜色 -->
+    <color name="theme_main_divider_color">@color/md_theme_dark_primary</color>
+
+    <!-- 设置页面 -->
+    <color name="setting_bg_color">@color/md_theme_dark_surface</color>
+    <!-- 搜索框颜色40%透明度 -->
+    <color name="search_bg_color">#66E1E3E5</color>
+    <!-- 搜索框填充颜色 light#fff   dark#1A1A20 -->
+    <color name="search_solid_color">#1A1A20</color>
+    <!-- 搜索文字颜色40%透明度 -->
+    <color name="search_text_color">#99E1E3E5</color>
+    <!-- 启动页背景色-->
+    <color name="launcher_bg_color">@color/md_theme_dark_background</color>
+    <!-- 首页tab分割线颜色 -->
+    <color name="theme_home_divider_color">#33E1E3E5</color>
+
+    <!--默认图片背景颜色-->
+    <color name="img_bg_default_large_color">#2C3038</color>
+
+    <!--  下载进度条的底色  -->
+    <color name="progress_track_color">#CC323439</color>
+</resources>

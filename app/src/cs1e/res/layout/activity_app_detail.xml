@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zeekr.component.rebound.ZeekrReboundRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<androidx.constraintlayout.widget.ConstraintLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_main_background_color">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/theme_main_background_color"
+        android:fadingEdge="none"
+        android:fadingEdgeLength="128dp"
+        android:overScrollMode="never"
+        android:requiresFadingEdge="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/layout_app_detail_info"
+                layout="@layout/view_app_detail_info"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/dp.132"
+                android:layout_marginTop="@dimen/dp.54" />
+
+            <include
+                android:id="@+id/layout_app_detail_images"
+                layout="@layout/view_app_detail_recycler_image"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp.490"
+                android:layout_marginStart="@dimen/dp.132"
+                android:layout_marginTop="@dimen/dp.318" />
+
+        </FrameLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <include
+        android:id="@+id/detail_loading"
+        layout="@layout/layout_loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+</com.zeekr.component.rebound.ZeekrReboundRefreshLayout>
+

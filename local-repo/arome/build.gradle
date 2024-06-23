@@ -1,0 +1,2 @@
+configurations.maybeCreate("default")
+artifacts.add("default",file('aromecli-build-1.0.0.230918203554.aar'))

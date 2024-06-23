@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">#383A3D</color>
+    <color name="colorPrimaryDark">#2196F3</color>
+    <color name="colorAccent">#2196F3</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorBlackGry3">#333333</color>
+    <color name="colorBlackGry6">#666666</color>
+    <color name="colorBlackGry9">#999999</color>
+    <color name="color_f5f5f5">#f5f5f5</color>
+    <color name="colorGreen">#62B75D</color>
+    <color name="colorBottomNavDefault">#505050</color>
+    <color name="colorGray_E">#EEEEEE</color>
+    <color name="colorDivider">#ffd2d2d2</color>
+    <color name="colorRed">#c00811</color>
+    <color name="secondary">#f88650</color>
+    <color name="colorOrange">#FF7800</color>
+    <color name="colorPrimary_10">#550C6721</color>
+    <color name="colorPrimary_20">#5CBE73</color>
+    <color name="colorPrimary_30">#E0EEEE</color>
+    <color name="common_accent_color">#5A8DDF</color>
+    <color name="transparent">#00000000</color>
+    <color name="color_3688F6">#3688F6</color>
+    <color name="color_317ADD">#317ADD</color>
+    <color name="color_323232">#323232</color>
+    <color name="color_383A3D">#383A3D</color>
+    <color name="color_60_383A3D">#66383A3D</color>
+    <color name="color_15_383A3D">#D8383A3D</color>
+    <color name="color_16_383A3D">#DE383A3D</color>
+    <color name="color_4BA4D8">#4BA4D8</color>
+    <color name="color_35_383A3D">#59383A3D</color>
+    <color name="color_66_383A3D">#66383A3D</color>
+    <color name="color_29_383A3D">#29383A3D</color>
+
+    <!-- 白色 -->
+    <color name="white">#FFFFFFFF</color>
+    <color name="white95">#F2FFFFFF</color>
+    <color name="white90">#E6FFFFFF</color>
+    <color name="white85">#D9FFFFFF</color>
+    <color name="white80">#CCFFFFFF</color>
+    <color name="white75">#BFFFFFFF</color>
+    <color name="white70">#B3FFFFFF</color>
+    <color name="white65">#A6FFFFFF</color>
+    <color name="white60">#99FFFFFF</color>
+    <color name="white55">#8CFFFFFF</color>
+    <color name="white50">#80FFFFFF</color>
+    <color name="white45">#73FFFFFF</color>
+    <color name="white40">#66FFFFFF</color>
+    <color name="white35">#59FFFFFF</color>
+    <color name="white30">#4DFFFFFF</color>
+    <color name="white25">#40FFFFFF</color>
+    <color name="white20">#33FFFFFF</color>
+    <color name="white15">#26FFFFFF</color>
+    <color name="white10">#1AFFFFFF</color>
+    <color name="white5">#0DFFFFFF</color>
+
+    <!-- 黑色 -->
+    <color name="black">#FF000000</color>
+    <color name="black95">#F2000000</color>
+    <color name="black90">#E6000000</color>
+    <color name="black85">#D9000000</color>
+    <color name="black80">#CC000000</color>
+    <color name="black75">#B000000F</color>
+    <color name="black70">#B3000000</color>
+    <color name="black65">#A6000000</color>
+    <color name="black60">#99000000</color>
+    <color name="black55">#8C000000</color>
+    <color name="black50">#80000000</color>
+    <color name="black45">#73000000</color>
+    <color name="black40">#66000000</color>
+    <color name="black35">#59000000</color>
+    <color name="black30">#4D000000</color>
+    <color name="black25">#40000000</color>
+    <color name="black20">#33000000</color>
+    <color name="black15">#26000000</color>
+    <color name="black10">#1A000000</color>
+    <color name="black5">#0D000000</color>
+
+    <!-- 按钮按压时的颜色 -->
+    <color name="common_button_pressed_color">#AA5A8DDF</color>
+    <!-- 按钮禁用时的颜色 -->
+    <color name="common_button_disable_color">#BBBBBB</color>
+    <!-- 分割线的颜色 -->
+    <color name="common_line_color">#ECECEC</color>
+    <!-- 矢量图标的颜色 -->
+    <color name="common_icon_color">#7C7C7C</color>
+
+    <!-- 对话框确认按钮的文本颜色 -->
+    <color name="common_confirm_text_color">#007AFF</color>
+    <!-- 对话框取消按钮的文本颜色 -->
+    <color name="common_cancel_text_color">#F44336</color>
+
+    <!-- 精品推荐Banner Indicator颜色 -->
+    <color name="indicator_checked_color">#F88650</color>
+    <color name="indicator_normal_color">#29000000</color>
+
+    <color name="setting_background_color">#F7F8F9</color>
+    <color name="setting_view_color">#C4C4C4</color>
+
+
+    <!-- 商城主题背景颜色 -->
+    <color name="theme_main_background_color">@color/md_theme_light_background</color>
+    <!-- 标题颜色 100%不透明度 -->
+    <color name="theme_main_text_color">@color/md_theme_light_primary</color>
+    <!-- 主文本 80%不透明度 CC -->
+    <color name="theme_main_content_color">@color/md_theme_light_primary_host</color>
+    <!-- 主文本 70%不透明度 B3 -->
+    <!-- 副文本 60%不透明度 99 -->
+    <color name="theme_second_text_color">@color/md_theme_light_primary_summary</color>
+    <!-- 副文本 50%不透明度 80 -->
+    <!-- 提示 40%不透明度 66 -->
+    <color name="theme_toast_text_color">@color/md_theme_light_primary_toast</color>
+    <!-- 禁用 20%不透明度 33-->
+    <color name="theme_forbid_text_color">@color/md_theme_light_primary_disabled</color>
+    <!-- 品牌橘色 -->
+    <color name="theme_orange_text_color">@color/md_theme_light_secondary</color>
+    <!-- 按钮背景颜色 28%不透明度47-->
+    <color name="theme_main_button_background_color">#47C2C7CC</color>
+    <!-- 按钮禁用背景颜色 20%不透明度CC-->
+    <color name="theme_main_button_forbid_background_color">#CCC2C7CC</color>
+    <!-- 分割线颜色 20%不透明度-->
+    <color name="theme_main_divider_color">@color/md_theme_light_primary_disabled</color>
+
+
+
+
+
+
+    <color name="theme_main_text_color_opposite">@color/md_theme_light_primary</color>
+
+    <!-- 设置页面 -->
+    <color name="setting_bg_color">@color/md_theme_light_surface</color>
+    <!-- 搜索框颜色32%透明度 -->
+    <color name="search_bg_color">#66383A3D</color>
+    <!-- 搜索框填充颜色 light#fff   dark#1A1A20 -->
+    <color name="search_solid_color">#FFFFFF</color>
+    <!-- 搜索文字颜色40%透明度 -->
+    <color name="search_text_color">#383A3D</color>
+    <!-- 启动页背景色-->
+    <color name="launcher_bg_color">#DDE0E5</color>
+    <!-- 首页tab分割线颜色 -->
+    <color name="theme_home_divider_color">#33383A3D</color>
+
+    <!--默认图片背景颜色-->
+    <color name="img_bg_default_large_color">#ffffff</color>
+
+    <!--  下载进度条的底色  -->
+    <color name="progress_track_color">#66C2C7CC</color>
+</resources>

@@ -1,0 +1,74 @@
+plugins {
+    id 'com.android.library'
+    id 'kotlin-android'
+    id 'kotlin-kapt'
+    id 'kotlin-parcelize'
+}
+
+android {
+    compileSdkVersion 33
+
+    defaultConfig {
+        minSdkVersion 28
+        targetSdkVersion 33
+        // dex突破65535的限制
+        multiDexEnabled true
+        flavorDimensions "vehicleModel"
+    }
+    compileOptions {
+        targetCompatibility = JavaVersion.VERSION_11
+        sourceCompatibility = JavaVersion.VERSION_11
+    }
+
+    kotlinOptions {
+        jvmTarget = JavaVersion.VERSION_11
+    }
+    productFlavors {
+        cs1e {}
+        ef1etv {}
+        cx1e {}
+    }
+
+    sourceSets {
+        cs1e {}
+        ef1etv {}
+        cx1e {}
+    }
+
+    // 构建类型，此处配置debug和release版本的一些参数，像混淆、签名配置。
+    buildTypes {
+        debug {
+            debuggable true
+        }
+        uat {
+            debuggable true
+            minifyEnabled true
+            zipAlignEnabled true
+        }
+        // release 包的配置
+        release {
+            debuggable false
+            minifyEnabled true
+            zipAlignEnabled true
+        }
+
+    }
+}
+
+dependencies {
+    api fileTree(dir: 'libs', include: ['*.jar', '*.aar'])
+
+    api "androidx.appcompat:appcompat:1.5.0"
+    api 'androidx.core:core-ktx:1.8.0'
+    //rxHttp
+    api "com.squareup.okhttp3:okhttp:4.10.0"
+    api 'com.github.liujingxing.rxhttp:rxhttp:2.9.2'
+    kapt 'com.github.liujingxing.rxhttp:rxhttp-compiler:2.9.2'
+    //log
+    api "com.github.zhaokaiqiang.klog:library:1.6.0"
+    //Toast
+    //api 'com.github.getActivity:ToastUtils:9.6'
+
+    implementation project(path: ':car')
+    implementation project(path: ':basic-core')
+}

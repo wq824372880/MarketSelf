@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="@dimen/tv_1000"
+            android:layout_height="@dimen/tv_466">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.zeekr.component.tv.webview.ZeekrTVWebView
+                    android:id="@+id/agent_web_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginEnd="@dimen/tv_focus_stroke_width"
+                    android:background="@color/theme_main_background_color"
+                    android:defaultFocusHighlightEnabled="false"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:overScrollMode="never" />
+
+                <View
+                    android:id="@+id/view_content_focus"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@drawable/tv_item_bg" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_loading"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/theme_main_background_color"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone"
+                tools:visibility="visible">
+
+                <com.zeekr.lottie.ZeekrLoadingInfiniteView
+                    android:id="@+id/lottie_view"
+                    android:layout_width="@dimen/tv_175"
+                    android:layout_height="@dimen/tv_175"
+                    android:layout_gravity="center" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tv_loading_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="98dp"
+                    android:text="加载中..."
+                    android:textColor="@color/theme_btn_text_color"
+                    android:textSize="@dimen/tv_36" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_error"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/theme_main_background_color"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="visible"
+                tools:visibility="gone">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/state_error_img"
+                    android:layout_width="@dimen/tv_200"
+                    android:layout_height="@dimen/tv_200"
+                    android:src="@drawable/load_error" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/state_error_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/tv_40"
+                    android:layout_marginBottom="@dimen/tv_12"
+                    android:text="@string/helper_loading_error_tip"
+                    android:textColor="@color/theme_btn_text_color"
+                    android:textSize="@dimen/tv_31" />
+
+            </LinearLayout>
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="@dimen/tv_1000"
+            android:layout_height="@dimen/tv_86"
+            android:layout_marginTop="@dimen/tv_34">
+
+            <com.zeekr.component.tv.button.ZeekrTVButton
+                android:id="@+id/bt_single_real"
+                style="@style/Widget.ZeekrTVButton.RealButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:text="@string/common_confirm"
+                tools:visibility="gone" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/layout_bt_double"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone"
+                tools:visibility="visible">
+
+                <com.zeekr.component.tv.button.ZeekrTVButton
+                    android:id="@+id/bt_double_real"
+                    style="@style/Widget.ZeekrTVButton.RealButton"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="@dimen/tv_20"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:text="@string/common_refresh"
+                    android:textSize="@dimen/tv_32"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintHorizontal_chainStyle="packed"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toLeftOf="@id/bt_double_ghost"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.zeekr.component.tv.button.ZeekrTVButton
+                    android:id="@+id/bt_double_ghost"
+                    style="@style/Widget.ZeekrTVButton.GhostButton"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:text="@string/common_cancel"
+                    android:textSize="@dimen/tv_32"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toRightOf="@id/bt_double_real"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </FrameLayout>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</merge>

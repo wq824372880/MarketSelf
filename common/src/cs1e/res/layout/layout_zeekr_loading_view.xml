@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.zeekrlife.common.widget.state.ZeekrLoadingView
+        android:id="@+id/lottie_view"
+        app:lottie_repeatMode="restart"
+        android:layout_gravity="center"
+        app:lottie_repeatCount="30"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/loading_zeekr_tips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/helper_loading_tip"
+        android:textColor="@color/upload_text_color"
+        android:textSize="@dimen/helper.dp.24" />
+</LinearLayout>

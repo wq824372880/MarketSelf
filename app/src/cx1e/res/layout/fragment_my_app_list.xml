@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.scwang.smart.refresh.layout.SmartRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/smart_refresh_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:srlEnableLoadMore="false"
+    app:srlEnableRefresh="false">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/dp.52"
+        android:layout_marginEnd="@dimen/dp.88"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/text_view_myapp_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/category_title_top"
+                android:text="@string/my_app_title_name"
+                android:textAppearance="?attr/textAppearanceTitleSmall"
+                android:textColor="@color/theme_main_text_color"
+                android:textSize="@dimen/my_app_title_text_size"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/text_view_myapp_update_tip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:alpha=".4"
+                android:paddingTop="@dimen/dp.12"
+                android:textColor="@color/theme_main_text_color"
+                android:textSize="@dimen/app_item_tv_app_name_text_size"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/text_view_myapp_title" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_myapp_quick_update"
+                style="@style/Widget.ZeekrButton.GhostButton"
+                android:layout_width="240dp"
+                android:layout_height="@dimen/dp.86"
+                android:layout_marginTop="@dimen/dp.32"
+                android:layout_marginEnd="@dimen/dp.36"
+                android:paddingTop="@dimen/dp.8"
+                android:paddingBottom="@dimen/dp.8"
+                android:text="@string/my_app_quick_update"
+                android:textAppearance="?attr/textAppearanceLabelMedium"
+                android:textSize="@dimen/dp.32"
+                app:cornerRadius="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/text_view_myapp_update_num"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dp.64"
+                android:gravity="center"
+                android:visibility="invisible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/dp_40"
+            android:orientation="vertical">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fadeScrollbars="false"
+                android:fadingEdge="vertical"
+                android:fadingEdgeLength="80dp"
+                android:requiresFadingEdge="vertical"
+                android:scrollbarThumbVertical="@drawable/scrollbar_thumb_vertical"
+                android:scrollbars="vertical" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</com.scwang.smart.refresh.layout.SmartRefreshLayout>

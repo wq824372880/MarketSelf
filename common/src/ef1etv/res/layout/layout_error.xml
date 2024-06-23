@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/state_error_linear"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:focusable="false"
+    android:orientation="vertical"
+    tools:ignore="SpUsage">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/state_error_img"
+        android:layout_width="@dimen/tv_200"
+        android:layout_height="@dimen/tv_200"
+        android:layout_marginBottom="@dimen/tv_40"
+        android:src="@drawable/load_error" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/state_error_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/helper_loading_error_tip"
+        android:textColor="@color/theme_btn_text_color"
+        android:textSize="@dimen/tv_28" />
+
+    <com.zeekr.component.tv.button.ZeekrTVButton
+        android:id="@+id/state_error_text"
+        style="@style/Widget.ZeekrTVButton.RealButton"
+        android:layout_width="@dimen/tv_240"
+        android:layout_height="@dimen/tv_98"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_marginTop="80dp"
+        android:clickable="false"
+        android:text="刷新"
+        android:textSize="@dimen/tv_32" />
+</LinearLayout>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.alipay.mobile.aromecli" android:versionCode="200" android:versionName="2.0.0">
+  <uses-sdk android:minSdkVersion="18" android:targetSdkVersion="28"/>
+  <application/>
+</manifest>

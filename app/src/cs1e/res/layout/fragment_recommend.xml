@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zeekr.component.rebound.ZeekrReboundRefreshLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/smart_refresh_layout"
+        android:layout_width="match_parent"
+        app:zeekrRefreshLoadMoreIconSize="@dimen/detail_custom_tool_bar"
+        app:zeekrSpringBackMode="springBack_only_allow_refresh"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_marginStart="@dimen/dp.42"
+            android:layout_marginEnd="@dimen/dp.96"
+            android:layout_marginBottom="@dimen/dp_40"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.core.widget.NestedScrollView
+                android:fadingEdge="vertical"
+                android:fadingEdgeLength="80dp"
+                android:requiresFadingEdge="vertical"
+                android:id="@+id/layout_recommend_content"
+                android:paddingTop="@dimen/recommend_nested_padding_top"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="vertical"
+                android:scrollbarSize="@dimen/scrollbar_size"
+                android:scrollbarThumbVertical="@drawable/scrollbar_thumb_vertical"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:overScrollMode="never">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/dp.38"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp.22"
+                        android:orientation="vertical">
+
+                        <com.zhpan.bannerview.BannerViewPager
+                            android:id="@+id/banner_view"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dp.380"
+                            app:bvp_indicator_slide_mode="worm"
+                            app:bvp_page_style="multi_page_overlap" />
+                        <androidx.constraintlayout.utils.widget.ImageFilterView
+                            android:layout_marginTop="-355dp"
+                            android:id="@+id/shape_banner_round"
+                            android:background="@drawable/banner_foreground"
+                            android:scaleType="fitXY"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dp.328"/>
+
+                        <com.zhpan.bannerview.indicator.DrawableIndicator
+                            android:id="@+id/indicator_view"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dp_10"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="@dimen/dp.65" />
+
+                        <FrameLayout
+                            android:id="@+id/scrollView_recommend_adsense"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/scrollView_recommend_adsense_margin_top">
+
+                            <include
+                                layout="@layout/item_recommend_adsense_view"
+                                android:id="@+id/layout_recommend_adsense" />
+                        </FrameLayout>
+                    </LinearLayout>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:layout_marginTop="@dimen/dp.48"
+                        android:id="@+id/rv_recommend_apps"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:nestedScrollingEnabled="true" />
+
+                </LinearLayout>
+            </androidx.core.widget.NestedScrollView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+</com.zeekr.component.rebound.ZeekrReboundRefreshLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zeekrlife.market.app.widget.CustomToolBar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/customToolBar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_title_bar_title1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="824dp"
+        android:text="预览"
+        android:textAppearance="?attr/textAppearanceTitleLarge"
+        android:textColor="@color/theme_main_text_color"
+        android:textSize="32sp" />
+
+</com.zeekrlife.market.app.widget.CustomToolBar>

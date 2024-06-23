@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_app_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp.8"
+            android:alpha="0.6"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/app_detail_size_name"
+            android:textAppearance="?attr/textAppearanceLabelSmall"
+            android:textColor="@color/theme_main_text_color"
+            android:textSize="@dimen/app_desc_size" />
+
+        <TextView
+            android:id="@+id/tv_app_size_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp.8"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:textAppearance="?attr/textAppearanceBodyMedium"
+            android:textColor="@color/theme_main_text_color"
+            android:textSize="@dimen/app_item_tv_app_name_text_size" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_app_update_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp.8"
+            android:alpha="0.6"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/app_detail_update_time"
+            android:textAppearance="?attr/textAppearanceLabelSmall"
+            android:textColor="@color/theme_main_text_color"
+            android:textSize="@dimen/app_desc_size" />
+
+        <TextView
+            android:id="@+id/tv_app_update_time_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp.8"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:textAppearance="?attr/textAppearanceBodyMedium"
+            android:textColor="@color/theme_main_text_color"
+            android:textSize="@dimen/app_item_tv_app_name_text_size" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_app_version_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp.8"
+            android:alpha="0.6"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/app_detail_version_name"
+            android:textAppearance="?attr/textAppearanceLabelSmall"
+            android:textColor="@color/theme_main_text_color"
+            android:textSize="@dimen/app_desc_size" />
+
+        <TextView
+            android:id="@+id/tv_app_version_name_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp.6"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:textAppearance="?attr/textAppearanceBodyMedium"
+            android:textColor="@color/theme_main_text_color"
+            android:textSize="@dimen/app_item_tv_app_name_text_size" />
+
+    </LinearLayout>
+
+</LinearLayout>

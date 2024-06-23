@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp.100"
+    android:background="@color/theme_main_background_color"
+    android:paddingStart="@dimen/dp.20">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="215dp" />
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/image_view_item_icon"
+        android:layout_width="@dimen/dp.100"
+        android:layout_height="@dimen/dp.100"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:round="@dimen/dp.16"
+        tools:src="@tools:sample/avatars" />
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:layout_marginBottom="-1dp"
+        android:id="@+id/applet_shadow"
+        android:layout_width="@dimen/dp.35"
+        android:layout_height="wrap_content"
+        android:src="@drawable/applet_shadow"
+        app:layout_constraintBottom_toBottomOf="@+id/image_view_item_icon"
+        app:layout_constraintEnd_toEndOf="@+id/image_view_item_icon"
+         />
+
+    <com.zeekrlife.task.base.widget.TaskLayoutX
+        android:id="@+id/btn_view_download"
+        android:layout_width="@dimen/app_item_task_btn_width"
+        android:layout_height="@dimen/app_item_task_btn_height"
+        android:layout_marginTop="@dimen/dp_4"
+        android:layout_marginEnd="@dimen/dp_14"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.zeekr.component.button.ZeekrButton
+        android:id="@+id/btn_view_applet"
+        style="@style/Widget.ZeekrButton.GhostButton"
+        android:layout_width="@dimen/app_item_task_btn_width"
+        android:layout_height="@dimen/app_item_task_btn_height"
+        android:layout_marginTop="@dimen/dp_4"
+        android:layout_marginEnd="@dimen/dp_14"
+        android:text="@string/task_state_openable"
+        android:textSize="28sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--    <com.google.android.material.divider.MaterialDivider-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="1dp"-->
+    <!--        android:alpha="0.16"-->
+    <!--        app:dividerColor="@color/color_383A3D"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent" />-->
+
+    <TextView
+        android:id="@+id/text_view_item_name"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dp.48"
+        android:layout_marginStart="@dimen/dp.24"
+        android:layout_marginEnd="@dimen/dp.16"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:maxLines="1"
+        android:textAppearance="?attr/textAppearanceBodyMedium"
+        android:textColor="@color/theme_main_text_color"
+        android:textSize="@dimen/app_title_size"
+        app:layout_constraintEnd_toStartOf="@id/guideline"
+        app:layout_constraintStart_toEndOf="@id/image_view_item_icon"
+        app:layout_constraintTop_toTopOf="@id/image_view_item_icon"
+        tools:text="喜马拉雅" />
+
+    <TextView
+        android:id="@+id/text_view_item_slogan"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp.5"
+        android:layout_marginEnd="@dimen/dp.16"
+        android:alpha=".6"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:maxLines="1"
+        android:textAppearance="?attr/textAppearanceTitleSmall"
+        android:textColor="@color/theme_main_text_color"
+        android:textSize="@dimen/app_desc_size"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintStart_toStartOf="@+id/text_view_item_name"
+        app:layout_constraintTop_toBottomOf="@id/text_view_item_name" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

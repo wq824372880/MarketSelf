@@ -1,0 +1,86 @@
+plugins {
+    id 'com.android.library'
+    id 'kotlin-android'
+    id 'kotlin-kapt'
+    id 'kotlin-parcelize'
+}
+
+android {
+    compileSdkVersion 33
+
+    defaultConfig {
+        minSdkVersion 28
+        targetSdkVersion 33
+
+        flavorDimensions "vehicleModel"
+        consumerProguardFiles "consumer-rules.pro"
+    }
+
+    productFlavors {
+        cs1e {}
+        ef1etv {}
+        cx1e {}
+    }
+
+    sourceSets {
+        cs1e {
+            java {
+                srcDirs 'src/cs1e/java'
+            }
+        }
+        ef1etv {
+            java {
+                srcDirs 'src/ef1etv/java'
+            }
+        }
+        cx1e {
+            java {
+                srcDirs 'src/cx1e/java'
+            }
+        }
+    }
+
+    buildTypes {
+        debug {
+            debuggable true
+            minifyEnabled false
+        }
+        uat {
+            debuggable true
+            minifyEnabled true
+            zipAlignEnabled true
+        }
+        release {
+            debuggable false
+            minifyEnabled true
+            zipAlignEnabled true
+        }
+    }
+    compileOptions {
+        targetCompatibility = JavaVersion.VERSION_11
+        sourceCompatibility = JavaVersion.VERSION_11
+    }
+
+    kotlinOptions {
+        jvmTarget = JavaVersion.VERSION_11
+    }
+}
+
+dependencies {
+    api fileTree(dir: 'libs', include: ['*.jar', '*.aar'])
+    api fileTree(dir: 'libs/zeekrapi', include: ['*.jar'])
+    api fileTree(dir: 'libs/openapi', include: ['*.jar'])
+
+    implementation project(path: ':basic-core')
+
+    api 'com.zeekr.sdk:base:1.0.7-SNAPSHOT'
+    api 'com.zeekr.sdk:mediacenter:1.1.5-SNAPSHOT'
+    api 'com.zeekr.sdk:device:1.0.5-SNAPSHOT'
+    api 'com.zeekr.sdk:multidisplay:1.0.11'
+
+    //添加 Sensors Analytics SDK 依赖
+    api ('com.sensorsdata.analytics.android:SensorsAnalyticsSDK:6.8.0'){
+        exclude(group:'com.sensorsdata.analytics.android', module:'autoTrack')
+    }
+
+}

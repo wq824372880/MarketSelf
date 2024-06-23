@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.scwang.smart.refresh.layout.SmartRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/smart_refresh_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="@dimen/tv_58"
+    android:layout_marginEnd="@dimen/tv_70"
+    android:layout_marginStart="@dimen/tv_30"
+    app:srlEnableLoadMore="false"
+    app:srlEnableRefresh="false">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/tv_6"
+        android:layout_marginEnd="@dimen/tv_44"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/tv_32">
+
+            <TextView
+                android:id="@+id/text_view_myapp_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/tv_12"
+                android:text="@string/my_app_title_name"
+                android:textAppearance="?attr/textAppearanceTitleSmall"
+                android:textColor="@color/theme_main_text_color"
+                android:textSize="@dimen/tv_40"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/text_view_myapp_update_tip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:alpha=".4"
+                android:paddingTop="@dimen/tv_6"
+                android:textColor="@color/theme_main_text_color"
+                android:textSize="@dimen/tv_24"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/text_view_myapp_title" />
+
+            <com.zeekr.component.tv.button.ZeekrTVButton
+                android:id="@+id/btn_myapp_quick_update"
+                style="@style/Widget.ZeekrTVButton.GhostButton"
+                android:layout_width="@dimen/tv_240"
+                android:layout_height="@dimen/tv_86"
+                android:layout_marginTop="@dimen/tv_16"
+                android:layout_marginEnd="@dimen/tv_16"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:paddingTop="@dimen/tv_4"
+                android:paddingBottom="@dimen/tv_4"
+                android:text="@string/my_app_quick_update"
+                android:textAppearance="?attr/textAppearanceLabelMedium"
+                android:textColor="@color/theme_main_text_color"
+                android:textSize="@dimen/tv_28"
+                app:cornerRadius="@dimen/tv_4"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/text_view_myapp_update_num"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/tv_32"
+                android:layout_marginTop="@dimen/tv_8"
+                android:layout_marginEnd="@dimen/tv_10"
+                android:gravity="center"
+                android:visibility="invisible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/tv_40"
+            android:orientation="vertical">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipToPadding="false"
+                android:paddingBottom="@dimen/tv_40"
+                android:scrollbarThumbVertical="@drawable/scrollbar_thumb_vertical"
+                android:scrollbars="vertical" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</com.scwang.smart.refresh.layout.SmartRefreshLayout>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zeekrlife.market.utils.FocusBorderConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/setting_item"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/tv_120"
+    android:background="@drawable/tv_setting_item_un_focus"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:defaultFocusHighlightEnabled="false"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    app:scaleValue="1.05">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/item_switch_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="@dimen/tv_36"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="@string/setting_auto_update"
+            android:textColor="@color/theme_main_text_color"
+            android:textSize="@dimen/tv_32"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.zeekr.component.tv.selection.ZeekrTVSwitchButton
+            android:id="@+id/item_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/tv_36"
+            android:checked="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/tv_38"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_item_title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:textColor="@color/theme_main_text_color"
+            android:textSize="@dimen/tv_32" />
+
+        <View
+            android:id="@+id/tv_item_title_right_icon"
+            android:layout_width="@dimen/tv_5"
+            android:layout_height="@dimen/tv_5"
+            android:layout_marginStart="@dimen/tv_7"
+            android:visibility="gone" />
+    </LinearLayout>
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_setting_arrow"
+        android:layout_width="@dimen/tv_24"
+        android:layout_height="@dimen/tv_24"
+        android:layout_marginEnd="@dimen/tv_36"
+        android:alpha="0.6"
+        android:src="@drawable/selector_arrow_select"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_item_subtitle_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/tv_36"
+        android:alpha=".8"
+        android:textColor="@color/theme_main_text_color"
+        android:textSize="@dimen/tv_28"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</com.zeekrlife.market.utils.FocusBorderConstraintLayout>

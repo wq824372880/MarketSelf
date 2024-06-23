@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/state_error_linear"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:ignore="SpUsage">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/state_error_img"
+        android:layout_width="256dp"
+        android:layout_height="256dp"
+        android:src="@drawable/load_error" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/state_error_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_40"
+        android:text="@string/helper_loading_error_tip"
+        android:textColor="@color/theme_btn_text_color"
+        android:textSize="@dimen/dp.36" />
+
+    <com.zeekr.component.button.ZeekrButton
+        android:id="@+id/state_error_text"
+        style="@style/Widget.ZeekrButton.RealButton"
+        android:layout_width="@dimen/helper.dp.358"
+        android:layout_height="@dimen/helper.dp.108"
+        android:layout_marginTop="40dp"
+        android:clickable="false"
+        android:text="刷新"
+        android:textSize="@dimen/dp.36" />
+</LinearLayout>

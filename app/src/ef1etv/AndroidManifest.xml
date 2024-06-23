@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.zeekrlife.market">
+
+    <application>
+
+        <activity
+            android:name=".ui.activity.LauncherTVActivity"
+            android:exported="true"
+            android:screenOrientation="landscape" />
+
+        <activity
+            android:name=".ui.activity.HomeTVActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="landscape"
+            android:exported="true">
+<!--        <intent-filter>-->
+<!--            <action android:name="android.intent.action.MAIN" />-->
+
+<!--            <category android:name="android.intent.category.LAUNCHER" />-->
+<!--        </intent-filter>-->
+        </activity>
+
+        <activity
+            android:name=".ui.activity.SearchTVActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="landscape"
+            android:windowSoftInputMode="stateUnspecified|adjustResize|stateHidden|adjustPan" />
+
+        <activity
+            android:name=".ui.activity.WebTVActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="landscape" />
+
+        <activity
+            android:name="com.zeekrlife.market.ui.activity.AppTVDetailImgPreviewActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="landscape" />
+    </application>
+
+</manifest>

@@ -1,0 +1,2 @@
+-keep class com.zeekrlife.task.base.widget.** {*;}
+-keep class com.zeekrlife.task.base.bean.** {*;}

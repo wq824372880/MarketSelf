@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 背景矩形 -->
+    <item android:id="@android:id/background">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/tv_progressbar_background" /> <!-- 背景颜色 -->
+            <corners android:radius="@dimen/tv_13" /> <!-- 圆角半径 -->
+        </shape>
+    </item>
+    <!-- 进度矩形 -->
+    <item android:id="@android:id/progress">
+        <clip android:scaleWidth="100%">
+            <shape android:shape="rectangle">
+                <solid android:color="@color/tv_progressbar_progress" /> <!-- 进度颜色 -->
+                <corners android:radius="@dimen/tv_13" /> <!-- 圆角半径，与背景相同 -->
+            </shape>
+        </clip>
+    </item>
+</layer-list>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zeekrlife.market.utils.FocusBorderImageView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="@dimen/tv_645"
+    android:layout_height="@dimen/tv_374"
+    android:layout_marginTop="@dimen/tv_12"
+    android:layout_marginEnd="@dimen/tv_12"
+    android:layout_marginBottom="@dimen/tv_12"
+    android:background="@drawable/selector_focus_border_view"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:padding="@dimen/tv_8"
+    android:scaleType="fitXY"
+    app:scaleValue="1.05"
+    tools:srcCompat="@drawable/img_bg_default_large_app_detail_bg" />

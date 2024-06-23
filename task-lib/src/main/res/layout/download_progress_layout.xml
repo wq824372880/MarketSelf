@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ProgressBar
+        android:id="@+id/indicatorProgress"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:indeterminateDuration="1500"
+        android:layout_gravity="center"
+        app:trackThickness="@dimen/dp.8"
+        app:trackColor="@color/progress_track_color"
+        android:indeterminateDrawable="@drawable/down_loading_indicator" />
+
+    <com.google.android.material.progressindicator.CircularProgressIndicator
+        android:id="@+id/downloadProgress"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:indeterminate="false"
+        app:indicatorColor="@color/down_load_progress_indicator_color"
+        app:trackThickness="@dimen/dp.8"
+        app:trackColor="@color/progress_track_color"
+        app:trackCornerRadius="@dimen/dp_4"
+        app:indicatorSize="@dimen/dp.72"/>
+
+    <ImageView
+        android:id="@+id/downloadStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        tools:ignore="ContentDescription" />
+
+</merge>

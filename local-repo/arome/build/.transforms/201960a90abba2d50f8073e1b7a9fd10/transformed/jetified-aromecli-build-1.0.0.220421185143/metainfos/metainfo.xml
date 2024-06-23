@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE metainfo [
+    <!ELEMENT metainfo (application*, service*, broadcastReceiver*, valve*)>
+
+    <!ELEMENT className (#PCDATA)>
+    <!ELEMENT region (#PCDATA)>
+
+    <!ELEMENT appId (#PCDATA)>
+    <!ELEMENT engineTyp (#PCDATA)>
+    <!ELEMENT application (className, appId, engineTyp?, region?)>
+
+    <!ELEMENT interfaceName (#PCDATA)>
+    <!ELEMENT isLazy (#PCDATA)>
+    <!ELEMENT surviveRegionChange (#PCDATA)>
+    <!ELEMENT service (className, interfaceName, isLazy?, surviveRegionChange?, region?)>
+
+    <!ELEMENT action (#PCDATA)>
+    <!ELEMENT runInSubThread (#PCDATA)>
+    <!ELEMENT broadcastReceiver (className, action+, runInSubThread?, region?)>
+
+    <!ELEMENT pipelineName (#PCDATA)>
+    <!ELEMENT threadName (#PCDATA)>
+    <!ELEMENT weight (#PCDATA)>
+    <!ELEMENT valve (className, pipelineName, threadName, weight?, region?)>
+    ]>
+<metainfo>
+
+</metainfo>

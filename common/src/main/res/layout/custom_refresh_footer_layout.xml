@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp">
+    <TextView
+        android:id="@+id/tv_load_more"
+        android:gravity="center"
+        android:alpha=".4"
+        android:textColor="@color/theme_main_text_color"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginLeft="@dimen/dp_40"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="正在加载更多"
+        android:textSize="@dimen/dp.28"
+        android:layout_width="wrap_content"
+        android:layout_height="140dp"/>
+    <ProgressBar
+        android:layout_marginRight="@dimen/dp.16"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/tv_load_more"
+        android:id="@+id/loading"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_gravity="center_horizontal"
+        android:indeterminateDuration="1000"
+        android:indeterminateBehavior="repeat"
+        android:indeterminateDrawable="@drawable/refresh_loading" />
+
+    <ImageView
+        android:layout_marginRight="@dimen/dp.16"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/tv_load_more"
+        android:src="@drawable/progress_bar"
+        android:id="@+id/iv_loading"
+        android:layout_width="140dp"
+        android:layout_height="140dp" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

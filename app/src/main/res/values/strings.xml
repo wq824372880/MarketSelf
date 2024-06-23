@@ -1,0 +1,108 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+<!--    <string name="app_name">应用市场</string>-->
+    <string name="bottom_title_read">阅卷</string>
+    <string name="bottom_title_paper">组卷</string>
+    <string name="bottom_title_report">学业报告</string>
+    <string name="bottom_title_user">个人中心</string>
+    <string name="bottom_title_my_app">我的应用</string>
+<!--    <string name="privacy">本服务需要联网、调用存储、获取设备权限，获取设备、网络、账号、身份、交易、应用信息，以及您主动上传的数据。点击“同意”，即表示您同意上述内容及《极氪应用市场用户协议》、《极氪应用市场隐私政策》</string>-->
+    <string name="privacy_update">近期我们更新了《应用市场用户协议》、《应用市场隐私政策》。点击“同意”，即表示您同意上述内容</string>
+    <string name="common_confirm">确认</string>
+    <string name="common_cancel">取消</string>
+    <string name="common_refresh">刷新</string>
+    <string name="common_i_see">知道了</string>
+    <string name="common_see">知道了</string>
+
+    <string name="common_no_more_data">没有更多数据了</string>
+    <string name="common_code_send">发送验证码</string>
+
+    <string name="common_permission_alert">授权提醒</string>
+    <string name="common_permission_fail_1">授权失败，请正确授予权限</string>
+    <string name="common_permission_fail_2">获取权限失败，请手动授予权限</string>
+    <string name="common_permission_fail_3">获取权限失败，请手动授予%s</string>
+    <string name="common_permission_fail_4">没有授予后台定位权限，请您选择"始终允许"</string>
+    <string name="common_permission_goto">前往授权</string>
+    <string name="common_permission_calendar">日历权限</string>
+    <string name="common_permission_camera">相机权限</string>
+    <string name="common_permission_contacts">通讯录权限</string>
+    <string name="common_permission_location">定位权限</string>
+    <string name="common_permission_location_background">后台定位权限</string>
+    <string name="common_permission_microphone">麦克风权限</string>
+    <string name="common_permission_phone">电话权限</string>
+    <string name="common_permission_call_log">通话记录权限</string>
+    <string name="common_permission_sensors">身体传感器权限</string>
+    <string name="common_permission_activity_recognition">健身运动权限</string>
+    <string name="common_permission_sms">短信权限</string>
+    <string name="common_permission_storage">存储权限</string>
+    <string name="common_permission_install">安装应用权限</string>
+    <string name="common_permission_notification">通知栏权限</string>
+    <string name="common_permission_window">悬浮窗权限</string>
+    <string name="common_permission_setting">系统设置权限</string>
+
+    <string name="setting_auto_update">自动更新应用</string>
+    <string name="setting_version_number">版本号</string>
+    <string name="setting_auto_update_off">关闭</string>
+    <string name="setting_auto_update_on">打开</string>
+    <string name="setting_version_name_text">版本：%s</string>
+    <string name="setting_check_update">检查新版本</string>
+    <string name="setting_loading_update">正在检查更新</string>
+    <string name="setting_user_agreement">用户协议</string>
+    <string name="setting_privacy_agreement">隐私政策</string>
+    <string name="setting_detecting_update">检测更新中…</string>
+    <string name="setting_none_privacy_agreement">暂无隐私政策</string>
+    <string name="setting_none_user_agreement">暂无用户协议</string>
+    <string name="setting_dialog_button_confirm">确认</string>
+    <string name="setting_app_update_download_progress">下载中：%s%%</string>
+    <string name="setting_app_update_downloading">下载中…</string>
+    <string name="setting_app_download_progress">正在更新：%s%%</string>
+    <string name="setting_app_update_checking">正在检查更新</string>
+    <string name="setting_app_update_installing">安装中…</string>
+    <string name="setting_app_update_failed_please_try_again">更新失败，请重试</string>
+    <string name="setting_app_update_new_version">发现新版本</string>
+    <string name="setting_app_update_break_point_title">未完成更新任务</string>
+    <string name="setting_app_update_background">应用市场更新已进入后台</string>
+    <string name="setting_app_update_later">稍后再说</string>
+    <string name="setting_app_update_now">立即更新</string>
+    <string name="setting_app_update_continue">继续更新</string>
+    <string name="setting_app_update_break_point_content">上次更新任务未完成，是否继续</string>
+    <string name="setting_app_is_latest_version">当前已是最新版本</string>
+
+    <string name="home_search">搜索</string>
+    <string name="home_setting">设置</string>
+
+    <string name="item_app_update_time">更新时间</string>
+
+    <string name="my_app_title_name">我的应用</string>
+    <string name="my_app_quick_update">一键更新</string>
+    <string name="my_app_no_update">暂无更新</string>
+    <string name="my_app_updating">更新中…</string>
+    <string name="my_app_update_tips">%1$s个更新&#160;&#160;&#160;&#160;&#160;%2$sMB</string>
+
+    <string name="app_detail_uninstall">卸载</string>
+    <string name="app_detail_size_name">大小</string>
+    <string name="app_detail_update_time">更新时间</string>
+    <string name="app_detail_version_name">版本</string>
+    <string name="app_detail_info">信息</string>
+    <string name="app_detail_introduce">应用介绍</string>
+    <string name="app_detail_version_info">最新版本</string>
+    <string name="app_detail_developer">开发者</string>
+    <string name="app_detail_privacy_policy">隐私政策</string>
+    <string name="app_detail_preview">预览</string>
+    <string name="app_detail_uninstall_dialog_content">您确认要卸载%s吗？"</string>
+    <string name="app_detail_dialog_button_confirm">确认</string>
+    <string name="app_detail_dialog_button_cancel">取消</string>
+    <string name="app_detail_toast_uninstall_warning">该应用不允许卸载</string>
+    <string name="app_detail_uninstalling">卸载中…</string>
+    <string name="app_detail_uninstall_success">卸载成功</string>
+    <string name="app_detail_uninstall_fail">卸载失败</string>
+    <string name="app_detail_app_name">应用</string>
+    <string name="app_detail_back">返回</string>
+    <string name="app_detail_btn_cancel_download">终止</string>
+
+
+    <string name="app_search_enter_name">输入名称</string>
+
+    <string name="recommend_app_page_not_found">跳转页面不存在</string>
+    <string name="web_view_policy_should_override_url">为了车机安全，请您下载App后在应用内查看</string>
+
+</resources>

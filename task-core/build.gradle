@@ -1,0 +1,96 @@
+plugins {
+    id 'com.android.library'
+    id 'kotlin-android'
+    id 'kotlin-kapt'
+    id 'kotlin-parcelize'
+}
+
+android {
+    compileSdkVersion 33
+
+    defaultConfig {
+        minSdkVersion 28
+        targetSdkVersion 33
+        versionCode 16
+        flavorDimensions "vehicleModel"
+        consumerProguardFiles "consumer-rules.pro"
+    }
+
+    productFlavors {
+        cs1e {
+            buildConfigField "String", "MODEL_TYPE", "\"cs1e\""
+        }
+        ef1etv {
+            buildConfigField "String", "MODEL_TYPE", "\"ef1etv\""
+        }
+        cx1e {
+            buildConfigField "String", "MODEL_TYPE", "\"cx1e\""
+        }
+    }
+    sourceSets {
+        cs1e {
+            java {
+                srcDirs 'src/cs1e/java'
+            }
+            res {
+                srcDirs 'src/cs1e/res'
+            }
+        }
+        ef1etv {
+            java {
+                srcDirs 'src/ef1etv/java'
+            }
+            res {
+                srcDirs 'src/ef1etv/res'
+            }
+        }
+        cx1e {
+            java {
+                srcDirs 'src/cx1e/java'
+            }
+            res {
+                srcDirs 'src/cx1e/res'
+            }
+        }
+    }
+
+    buildTypes {
+        debug {
+            debuggable true
+            minifyEnabled false
+        }
+        uat {
+            debuggable true
+            minifyEnabled true
+            zipAlignEnabled true
+        }
+        release {
+            debuggable false
+            minifyEnabled true
+            zipAlignEnabled true
+        }
+    }
+    compileOptions {
+        targetCompatibility = JavaVersion.VERSION_11
+        sourceCompatibility = JavaVersion.VERSION_11
+    }
+
+    kotlinOptions {
+        jvmTarget = JavaVersion.VERSION_11
+    }
+}
+
+dependencies {
+
+    //room
+    kapt "androidx.room:room-compiler:2.5.2"
+    implementation "androidx.room:room-rxjava2:2.5.2"
+    api 'com.google.guava:guava:31.0.1-jre'
+
+    implementation "com.liulishuo.okdownload:okdownload:1.0.7"
+    implementation "com.liulishuo.okdownload:sqlite:1.0.7"
+    implementation "com.liulishuo.okdownload:okhttp:1.0.7"
+
+    implementation project(path: ':task-aidl')
+    implementation project(path: ':common')
+}

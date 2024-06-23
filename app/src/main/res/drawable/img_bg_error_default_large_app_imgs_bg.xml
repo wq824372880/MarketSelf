@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:radius="6dp" />
+            <solid android:color="@color/img_bg_default_large_color" />
+        </shape>
+    </item>
+    <item
+        android:bottom="287dp"
+        android:drawable="@drawable/img_bg_default_large_151x114"
+        android:left="537dip"
+        android:right="537dip"
+        android:top="287dp" />
+</layer-list>

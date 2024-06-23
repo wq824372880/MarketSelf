@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fl_loading"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_main_background_color"
+    android:gravity="center"
+    android:focusable="false"
+    android:paddingBottom="@dimen/tv_20">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.zeekr.lottie.ZeekrLoadingInfiniteView
+            android:id="@+id/lottie_view"
+            android:layout_width="@dimen/tv_175"
+            android:layout_height="@dimen/tv_175"
+            android:layout_gravity="center" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_loading_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/tv_49"
+            android:text="加载中..."
+            android:textAppearance="?attr/textAppearanceBodyMedium"
+            android:textColor="@color/theme_btn_text_color"
+            android:textSize="@dimen/tv_28" />
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,20 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="@dimen/banner_foreground_width"
+    android:height="@dimen/banner_foreground_height"
+    android:viewportWidth="1850"
+    android:viewportHeight="307">
+  <path
+      android:pathData="M16,0H0V16C0,7.2 7.2,0 16,0ZM1834,0C1842.8,0 1850,7.2 1850,16V0H1834ZM1850,294C1850,299.4 1847.4,304.1 1843.3,307H1850V294ZM16,307C7.2,307 0,299.8 0,291V307H16Z"
+      android:fillColor="#F2F3F4"
+      android:fillType="evenOdd"/>
+</vector>
+<!--<vector xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    android:width="1850dp"-->
+<!--    android:height="315dp"-->
+<!--    android:viewportWidth="1850"-->
+<!--    android:viewportHeight="315">-->
+<!--  <path-->
+<!--      android:pathData="M16,0H0V16C0,7.2 7.2,0 16,0ZM1834,0C1842.8,0 1850,7.2 1850,16V0H1834ZM1850,294C1850,299.4 1847.4,304.1 1843.3,315H1850V294ZM16,315C7.2,315 0,299.8 0,291V315H16Z"-->
+<!--      android:fillColor="#F2F3F4"-->
+<!--      android:fillType="evenOdd"/>-->
+<!--</vector>-->

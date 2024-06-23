@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_launcher"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/dp.30">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_icon"
+        android:layout_width="@dimen/dp.192"
+        android:layout_height="@dimen/dp.192"
+        android:src="@drawable/img_bg_default"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp.60"
+        android:layout_marginTop="-5dp"
+        android:singleLine="true"
+        android:textAppearance="?attr/textAppearanceBodyLarge"
+        android:textColor="@color/theme_main_text_color"
+        android:textSize="@dimen/sp.40"
+        app:layout_constraintStart_toEndOf="@id/iv_icon"
+        app:layout_constraintTop_toTopOf="@id/iv_icon"
+        tools:ignore="RtlHardcoded" />
+
+    <TextView
+        android:id="@+id/tv_app_slogan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp.60"
+        android:alpha=".4"
+        android:ellipsize="end"
+        android:maxEms="30"
+        android:maxLines="1"
+        android:textAppearance="?attr/textAppearanceLabelSmall"
+        android:textColor="@color/theme_main_text_color"
+        android:textSize="@dimen/app_desc_size"
+        app:layout_constraintStart_toEndOf="@+id/iv_icon"
+        app:layout_constraintTop_toBottomOf="@+id/tv_app_name"
+        tools:ignore="RtlHardcoded" />
+
+    <com.zeekrlife.task.base.widget.TaskLayoutX
+        android:id="@+id/layout_task"
+        android:layout_width="@dimen/dp.154"
+        android:layout_height="@dimen/dp.64"
+        android:layout_marginStart="@dimen/dp.60"
+        android:layout_marginTop="@dimen/dp.24"
+        app:layout_constraintBottom_toBottomOf="@id/iv_icon"
+        app:layout_constraintStart_toEndOf="@+id/iv_icon"
+        app:layout_constraintTop_toBottomOf="@+id/tv_app_slogan" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_stop_downloading"
+        style="@style/Widget.ZeekrButton.Toggle"
+        android:layout_width="@dimen/dp.154"
+        android:layout_height="@dimen/dp.64"
+        android:layout_marginStart="@dimen/dp.32"
+        android:text="@string/app_detail_btn_cancel_download"
+        android:textSize="@dimen/app_desc_size"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/layout_task"
+        app:layout_constraintStart_toEndOf="@+id/layout_task"
+        app:layout_constraintTop_toTopOf="@id/layout_task" />
+
+    <FrameLayout
+        android:id="@+id/layout_btn_uninstall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp.32"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/layout_task"
+        app:layout_constraintStart_toEndOf="@+id/layout_task"
+        app:layout_constraintTop_toTopOf="@id/layout_task">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_uninstall"
+            style="@style/Widget.ZeekrButton.Toggle"
+            android:layout_width="@dimen/dp.154"
+            android:layout_height="@dimen/dp.64"
+            android:text="@string/app_detail_btn_uninstall"
+            android:textSize="@dimen/app_desc_size"
+            android:visibility="visible" />
+
+        <com.zeekr.component.button.ZeekrButton
+            android:id="@+id/btn_uninstall_tip"
+            android:layout_width="@dimen/dp.154"
+            android:layout_height="@dimen/dp.64"
+            android:alpha="0"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <include
+        android:id="@+id/layout_app_detail_apk_info"
+        layout="@layout/view_app_detail_apk_info"
+        android:layout_width="@dimen/dp.907"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_icon"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_app_detail_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="644dp"
+        android:text="@string/app_detail_introduce"
+        android:textAppearance="?attr/textAppearanceBodyMedium"
+        android:textColor="@color/theme_main_text_color"
+        android:textSize="36sp"
+        app:layout_constraintStart_toStartOf="@+id/iv_icon"
+        app:layout_constraintTop_toBottomOf="@+id/iv_icon"
+        tools:ignore="MissingConstraints" />
+
+    <FrameLayout
+        android:id="@+id/layout_app_detail_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp.16"
+        android:layout_marginEnd="@dimen/dp.80"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/tv_app_detail_info"
+        app:layout_constraintTop_toBottomOf="@+id/tv_app_detail_info">
+
+        <TextView
+            android:id="@+id/tv_app_detail_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alpha=".6"
+            android:ellipsize="end"
+            android:maxLines="3"
+            android:textAppearance="?attr/textAppearanceLabelMedium"
+            android:textColor="@color/theme_main_text_color"
+            android:textSize="32sp" />
+
+        <ImageView
+            android:id="@+id/iv_app_detail_desc_check_all"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_gravity="end|bottom"
+            android:background="@drawable/bg_app_detail_desc_check_all"
+            android:paddingVertical="1dp"
+            android:paddingStart="@dimen/dp.65"
+            android:paddingEnd="0dp"
+            android:src="@drawable/selector_arrow_select"
+            android:visibility="gone"
+            app:tint="@color/theme_main_text_color" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tv_app_detail_version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="@string/app_detail_version_info"
+        android:textAppearance="?attr/textAppearanceBodyMedium"
+        android:textColor="@color/theme_main_text_color"
+        android:textSize="36sp"
+        app:layout_constraintStart_toStartOf="@+id/layout_app_detail_desc"
+        app:layout_constraintTop_toBottomOf="@+id/layout_app_detail_desc"
+        tools:ignore="MissingConstraints" />
+
+    <FrameLayout
+        android:id="@+id/layout_app_detail_version_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp.16"
+        android:layout_marginEnd="@dimen/dp.80"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/tv_app_detail_version"
+        app:layout_constraintTop_toBottomOf="@+id/tv_app_detail_version">
+
+        <TextView
+            android:id="@+id/tv_app_detail_version_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alpha=".6"
+            android:ellipsize="end"
+            android:maxLines="3"
+            android:textAppearance="?attr/textAppearanceLabelMedium"
+            android:textColor="@color/theme_main_text_color"
+            android:textSize="32sp" />
+
+        <ImageView
+            android:id="@+id/iv_app_detail_version_info_check_all"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_gravity="end|bottom"
+            android:background="@drawable/bg_app_detail_desc_check_all"
+            android:paddingVertical="1dp"
+            android:paddingStart="@dimen/dp.65"
+            android:paddingEnd="0dp"
+            android:src="@drawable/selector_arrow_select"
+            android:visibility="gone"
+            app:tint="@color/theme_main_text_color" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tv_developers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_40"
+        android:alpha=".6"
+        android:text="@string/app_detail_developer"
+        android:textAppearance="?attr/textAppearanceLabelMedium"
+        android:textColor="@color/theme_main_text_color"
+        android:textSize="32sp"
+        app:layout_constraintStart_toStartOf="@+id/layout_app_detail_version_info"
+        app:layout_constraintTop_toBottomOf="@id/layout_app_detail_version_info"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tv_developers_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:alpha=".6"
+        android:textAppearance="?attr/textAppearanceLabelMedium"
+        android:textColor="@color/theme_main_text_color"
+        android:textSize="32sp"
+        app:layout_constraintStart_toStartOf="@+id/tv_developers"
+        app:layout_constraintTop_toBottomOf="@id/tv_developers"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tv_privacy_policy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:alpha=".6"
+        android:text="@string/app_detail_privacy_policy"
+        android:textAppearance="?attr/textAppearanceLabelMedium"
+        android:textColor="@color/theme_main_text_color"
+        android:textSize="32sp"
+        app:layout_constraintStart_toStartOf="@+id/tv_developers"
+        app:layout_constraintTop_toBottomOf="@id/tv_developers_value"
+        app:tint="@color/theme_main_text_color"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tv_privacy_policy_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:alpha=".6"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:paddingBottom="@dimen/dp.31"
+        android:textAppearance="?attr/textAppearanceLabelMedium"
+        android:textSize="32sp"
+        app:layout_constraintStart_toStartOf="@+id/tv_privacy_policy"
+        app:layout_constraintTop_toBottomOf="@id/tv_privacy_policy"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

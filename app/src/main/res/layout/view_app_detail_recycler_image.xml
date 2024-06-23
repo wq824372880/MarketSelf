@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zeekrlife.market.app.widget.DetailRecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rv_image"
+    android:layout_width="match_parent"
+    android:layout_height="490dp"
+    android:clipToPadding="false"
+    android:orientation="horizontal"
+    android:paddingEnd="@dimen/dp.76"
+    android:scrollbars="none"
+    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+    tools:listitem="@layout/item_app_detail_image" />
+

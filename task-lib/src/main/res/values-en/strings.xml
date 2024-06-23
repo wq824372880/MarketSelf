@@ -1,0 +1,19 @@
+<resources>
+<!--    <string name="task_state_openable">Open</string>-->
+<!--    <string name="task_state_downloadable">Download</string>-->
+<!--    <string name="task_state_updatable">Update</string>-->
+<!--    <string name="task_state_download_pending">Pending</string>-->
+<!--    <string name="task_state_download_progress">Downloading</string>o-->
+<!--    <string name="task_state_download_paused">Resume</string>-->
+<!--    <string name="task_state_download_completed">Install</string>-->
+<!--    <string name="task_state_installable">Install</string>-->
+<!--    <string name="task_state_install_pending">Wait for installation</string>-->
+<!--    <string name="task_state_install_started">Installing</string>-->
+<!--    <string name="task_state_install_progress">Installing</string>-->
+<!--    <string name="task_state_install_completed">Installed</string>-->
+<!--    <string name="task_state_need_pay_activity">Purchase membership</string>-->
+
+<!--    <string name="task_state_download_error_default_toast">Download failed, please try again</string>-->
+<!--    <string name="task_state_install_error_default_toast">Installation failed. Please try again</string>-->
+<!--    <string name="task_state_install_progress_default_toast">Installing, please wait</string>-->
+</resources>

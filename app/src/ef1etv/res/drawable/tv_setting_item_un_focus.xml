@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:bottom="@dimen/tv_8"
+        android:left="@dimen/tv_8"
+        android:right="@dimen/tv_8"
+        android:top="@dimen/tv_8">
+        <shape android:shape="rectangle">
+            <corners android:radius="@dimen/tv_13" />
+            <solid android:color="@color/setting_item_bg_color" />
+        </shape>
+    </item>
+    <item android:shape="rectangle">
+        <shape>
+            <corners android:radius="@dimen/tv_13" />
+            <stroke
+                android:width="@dimen/dp_4"
+                android:color="@color/transparent" />
+        </shape>
+    </item>
+</layer-list>

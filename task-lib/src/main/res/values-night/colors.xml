@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="task_layout_tv_state_need_buy_text_color">@color/black</color>
+
+    <color name="task_layout_state_bg_color">@color/color_2C3038</color>
+    <color name="task_layout_state_block_color">@color/color_CC_E1E3E5</color>
+
+    <color name="down_load_progress_indicator_color">#C86741</color>
+</resources>

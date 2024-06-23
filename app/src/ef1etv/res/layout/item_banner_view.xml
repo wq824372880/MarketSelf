@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hjq.shape.layout.ShapeConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="false"
+    android:focusableInTouchMode="false">
+
+    <com.hjq.shape.view.ShapeImageView
+        android:id="@+id/iv_banner_img"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tv_292"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shape_radius="@dimen/tv_8"
+        app:srcCompat="@drawable/img_bg_default_large_app_banner_bg" />
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/mask_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tv_300"
+        android:background="@color/black_40"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:round="@dimen/tv_8" />
+
+
+</com.hjq.shape.layout.ShapeConstraintLayout>

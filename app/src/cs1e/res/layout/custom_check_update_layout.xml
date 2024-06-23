@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="1080dp"
+    android:layout_height="104dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.zeekrlife.task.base.widget.CircleProgressBar
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="360dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/download_progress_bar"
+        android:layout_width="@dimen/dp.84"
+        android:layout_height="@dimen/dp.84"
+        android:max="100"
+        app:defaultColor="@color/task_layout_state_bg_color"
+        app:stateBlockColor="@color/task_layout_state_block_color"
+
+    />
+    <ImageView
+        android:id="@+id/iv_download_arrow"
+        android:src="@drawable/task_img_bg_arrow"
+        android:layout_width="@dimen/dp.20"
+        android:layout_height="@dimen/dp.25"
+        app:layout_constraintTop_toTopOf="@+id/download_progress_bar"
+        app:layout_constraintBottom_toBottomOf="@+id/download_progress_bar"
+        app:layout_constraintStart_toStartOf="@+id/download_progress_bar"
+        app:layout_constraintEnd_toEndOf="@+id/download_progress_bar"
+
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:text="- -MB/- -MB"
+        android:textSize="@dimen/dp.32"
+        app:layout_constraintTop_toTopOf="@+id/download_progress_bar"
+        app:layout_constraintBottom_toBottomOf="@id/download_progress_bar"
+        app:layout_constraintStart_toEndOf="@id/download_progress_bar"
+        android:layout_marginStart="@dimen/dp_40"
+        android:textColor="@color/theme_main_text_color"
+        android:id="@+id/tv_download"
+        android:alpha=".6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

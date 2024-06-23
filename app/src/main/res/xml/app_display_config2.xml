@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<display-config>
+    <is_coexist>3</is_coexist>
+    <displayid-list>
+        <config>
+            <displayid>backrest</displayid>
+            <is_visible>true</is_visible>
+            <is_enable>true</is_enable>
+        </config>
+
+    </displayid-list>
+
+</display-config>

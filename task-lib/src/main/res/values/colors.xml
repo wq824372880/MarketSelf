@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="task_layout_tv_state_need_buy_text_color">@color/day_or_night_main_reverse_color</color>
+
+    <color name="task_layout_state_bg_color">@color/colorWhite</color>
+    <color name="task_layout_state_block_color">@color/color_CC_383A3D</color>
+
+    <color name="down_load_progress_indicator_color">#F88650</color>
+</resources>

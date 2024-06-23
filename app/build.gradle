@@ -1,0 +1,191 @@
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+    id 'kotlin-kapt'
+    id 'kotlin-parcelize'
+    id 'io.github.wurensen.android-aspectjx'
+    id 'com.sensorsdata.analytics.android'
+}
+
+//加载签名配置的文件
+Properties props = new Properties()
+props.load(new FileInputStream(file("signing.properties")))
+
+def PKG_NAME = "com.zeekrlife.market"
+
+android {
+    compileSdkVersion 33
+    defaultConfig {
+        applicationId PKG_NAME
+        minSdkVersion 28
+        targetSdkVersion 33
+        versionCode 53
+        versionName '1.0.53'
+        // dex突破65535的限制
+        multiDexEnabled true
+
+        ndk {
+            abiFilters "arm64-v8a"//,"x86_64"
+        }
+        resConfigs("xhdpi", "zh")
+        flavorDimensions "vehicleModel"
+    }
+
+    // 签名配置
+    signingConfigs {
+        DefaultConfig {
+            keyAlias props['KEY_ALIAS']
+            keyPassword props['KEY_PASSWORD']
+            storeFile file(props['KEYSTORE_FILE'])
+            storePassword props['KEYSTORE_PASSWORD']
+        }
+    }
+    productFlavors {
+        cs1e {
+            buildConfigField "String", "MODEL_TYPE", "\"cs1e\""
+        }
+        ef1etv {
+            buildConfigField "String", "MODEL_TYPE", "\"ef1etv\""
+            applicationId "com.zeekr.market.rear"
+        }
+        cx1e {
+            buildConfigField "String", "MODEL_TYPE", "\"cx1e\""
+        }
+    }
+    sourceSets {
+        cs1e {
+            java {
+                srcDirs 'src/cs1e/java'
+            }
+            res {
+                srcDirs 'src/cs1e/res'
+            }
+        }
+        ef1etv {
+            java {
+                srcDirs 'src/ef1etv/java'
+            }
+            res {
+                srcDirs 'src/ef1etv/res'
+            }
+        }
+        cx1e {
+            java {
+                srcDirs 'src/cx1e/java'
+            }
+            res {
+                srcDirs 'src/cx1e/res'
+            }
+        }
+    }
+
+    buildTypes {
+        debug {
+            debuggable true
+            minifyEnabled false
+            shrinkResources false
+            zipAlignEnabled false
+            signingConfig signingConfigs.DefaultConfig
+            //            applicationIdSuffix '.dev'
+            //            versionNameSuffix '-dev'
+            resValue("string", "app_name", "应用市场")
+        }
+        uat {
+            debuggable false
+            minifyEnabled true
+            shrinkResources true
+            zipAlignEnabled true
+            signingConfig signingConfigs.DefaultConfig
+//            applicationIdSuffix '.uat'
+//            versionNameSuffix '-sit'
+            resValue("string", "app_name", "应用市场")
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        release {
+            debuggable false
+            minifyEnabled true
+            shrinkResources true
+            zipAlignEnabled true
+            signingConfig signingConfigs.DefaultConfig
+            resValue("string", "app_name", "应用市场")
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    buildFeatures {
+        viewBinding = true
+    }
+    compileOptions {
+        targetCompatibility = JavaVersion.VERSION_11
+        sourceCompatibility = JavaVersion.VERSION_11
+    }
+
+    kotlinOptions {
+        jvmTarget = JavaVersion.VERSION_11
+    }
+    // AOP 配置（exclude 和 include 二选一）
+    // 需要进行配置，否则就会引发冲突，具体表现为：
+    // 第一种：编译不过去，报错：java.util.zip.ZipException：Cause: zip file is empty
+    // 第二种：编译能过去，但运行时报错：ClassNotFoundException: Didn't find class on path: DexPathList
+    aspectjx {
+        //        exclude '˙androidx' exclude 'com.google' exclude 'org.jetbrains.kotlin' exclude 'com.squareup' exclude 'android.support' exclude 'versions.9' exclude 'module-info'
+        include android.defaultConfig.applicationId
+    }
+
+    android.applicationVariants.all {
+        variant ->
+            variant.outputs.all {
+                //在这里修改apk文件名
+                outputFileName = "ZeekrlifeMarket.apk"
+            }
+    }
+
+    // 产品特性
+    buildTypes.all { type ->
+        manifestPlaceholders = [
+                APPLICATION_ID: name == "release" ? PKG_NAME : (PKG_NAME + applicationIdSuffix),
+        ]
+    }
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar', '*.aar'])
+    implementation project(path: ':common')
+    implementation project(':task-core')
+    implementation project(':task-lib')
+    implementation project(':ampe-core')
+    implementation project(':ampe-lib')
+//    implementation project(':ampe-lib-widget')
+//    implementation 'com.zeekrlife.ampe.lib.widget:ampe-lib-widget:1.1.3'
+//    implementation 'com.zeekrlife.market.sdklibrary.update:sdk-library-update:1.0.2'
+    //这是用来测试 navigation 的 可以忽略
+    implementation 'androidx.navigation:navigation-fragment-ktx:2.3.5'
+    implementation 'androidx.navigation:navigation-ui-ktx:2.3.5'
+    implementation 'com.github.getActivity:ShapeView:9.0'
+    implementation 'com.github.getActivity:ShapeDrawable:3.0'
+    //banner
+    implementation 'com.github.zhpanvip:bannerviewpager:3.5.12'
+    implementation 'com.github.zhpanvip:viewpagerindicator:1.2.3'
+    //微信开源项目，替代SP
+    implementation 'com.tencent:mmkv-static:1.2.10'
+    // 日志打印框架：https://github.com/JakeWharton/timber
+    implementation 'com.jakewharton.timber:timber:4.7.1'
+    implementation 'com.github.getActivity:XXPermissions:12.3'
+    // AOP 插件库：https://mvnrepository.com/artifact/org.aspectj/aspectjrt
+    implementation 'org.aspectj:aspectjrt:1.9.6'
+    //agentWeb
+    implementation 'com.github.Justson.AgentWeb:agentweb-core:v5.0.0-alpha.1-androidx'
+    //viewpager
+    implementation 'q.rorbin:badgeview:1.1.2'
+    //room
+    kapt "androidx.room:room-compiler:2.5.2"
+    annotationProcessor "androidx.room:room-compiler:2.5.2"
+    implementation 'androidx.work:work-runtime:2.7.1'
+
+    implementation 'androidx.webkit:webkit:1.6.1'
+}
+

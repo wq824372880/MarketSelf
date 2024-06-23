@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:left="2dp"
+        android:right="2dp">
+        <shape android:shape="oval">
+            <corners android:radius="2dp" />
+            <padding android:bottom="4dp" />
+            <size
+                android:height="6dp"
+                android:width="6dp" />
+            <solid android:color="@color/banner_indicator_normal_color" />
+        </shape>
+    </item>
+</layer-list>

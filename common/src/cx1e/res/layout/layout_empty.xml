@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/state_empty_linear"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/dp.80"
+    tools:ignore="SpUsage">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/loading_empty_img"
+        android:layout_width="@dimen/dp.256"
+        android:layout_height="@dimen/dp.256"
+        android:layout_marginBottom="@dimen/dp_40"
+        android:background="@drawable/load_empty" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/helper_loading_empty_tip"
+        android:textColor="@color/theme_btn_text_color"
+        android:textSize="@dimen/app_title_size" />
+
+    <com.zeekr.component.button.ZeekrButton
+        android:id="@+id/state_empty_text"
+        style="@style/Widget.ZeekrButton.RealButton"
+        android:layout_width="@dimen/btn_turn_recommend_width"
+        android:layout_height="@dimen/btn_turn_recommend_height"
+        android:layout_marginTop="@dimen/dp_40"
+        android:clickable="false"
+        android:text="去精品推荐看看"
+        android:textSize="@dimen/app_title_size"
+        android:textStyle="bold"
+        android:visibility="invisible" />
+</LinearLayout>

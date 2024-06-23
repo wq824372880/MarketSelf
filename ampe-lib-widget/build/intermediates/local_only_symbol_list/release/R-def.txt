@@ -1,0 +1,16 @@
+R_DEF: Internal format may change without notice
+local
+attr? defaultColor
+attr? defaultHeight
+attr? radius
+attr? reachedColor
+attr? reachedHeight
+attr? stateBlockColor
+color colorDark
+color colorWhite
+color theme_main_background_color
+dimen apps_card_height
+dimen apps_card_width
+id fragment_container
+layout fragment_applet_widget
+styleable CircleProgressBar defaultColor reachedColor stateBlockColor defaultHeight reachedHeight radius
